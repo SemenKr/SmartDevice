@@ -6,6 +6,9 @@
 $color-default-black:               #000000;
 $color-default-white:               #ffffff;
 $color-transparent:                 rgba(255, 255, 255, 0);
+$color-default-bg:                  linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+$color-light-text:                  #f2f5f7;
+$color-dark-text:                   #041827;
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
@@ -26,6 +29,8 @@ $fz-default:                        16px;
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
+
+$ff-roboto:                         "Roboto Condensed", "Arial", sans-serif;
 
 $ff-placeholder:                    "Placeholder", "Arial", sans-serif;
 
