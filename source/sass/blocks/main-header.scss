@@ -1,4 +1,5 @@
 .main-header {
+  width: 100%;
   background: $color-default-bg;
   display: flex;
   flex-direction: row;
@@ -7,4 +8,35 @@
   color: $color-light-text;
   padding-top: 30px;
   padding-bottom: 35px;
+  position: fixed;
+
+  @include vp-1023 {
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+
+  @include vp-767 {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+}
+
+.main-header__logo {
+  margin-right: auto;
+}
+
+.main-header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1222px;
+}
+
+.main-header__button {
+  margin-left: auto;
+
+  @include vp-1023 {
+    display: none;
+  }
 }

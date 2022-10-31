@@ -1,0 +1,32 @@
+.info {
+  padding-top: 305px;
+  padding-bottom: 280px;
+  background-color: #000000;
+  background-image: url("../../img/background-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.info__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $color-light-text;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.info__description {
+  font-family: "PT Mono", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 155%;
+  color: $color-light-text;
+  margin: 0;
+  margin-bottom: 40px;
+}

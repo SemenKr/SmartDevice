@@ -31,4 +31,13 @@
   @include hover-focus {
     opacity: 0.8;
   }
+
+  &--info {
+    padding: 15px 25px;
+    background-color: $color-neon-blue;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
 }
