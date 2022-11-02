@@ -6,6 +6,35 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+
+  @include vp-1023 {
+    padding-top: 180px;
+    padding-bottom: 205px;
+  }
+
+  @include vp-767 {
+    padding-top: 150px;
+    padding-bottom: 190px;
+  }
+}
+
+.info__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 1222px;
+  margin-left: 125px;
+  margin-right: 125px;
+
+  @include vp-1023 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .info__title {
@@ -18,6 +47,16 @@
   color: $color-light-text;
   margin: 0;
   margin-bottom: 40px;
+
+  @include vp-1023 {
+    font-size: 64px;
+    line-height: 1;
+  }
+
+  @include vp-767 {
+    font-size: 36px;
+    line-height: 1;
+  }
 }
 
 .info__description {
@@ -29,4 +68,10 @@
   color: $color-light-text;
   margin: 0;
   margin-bottom: 40px;
+
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 1.55;
+  }
 }
