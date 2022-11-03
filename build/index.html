@@ -110,6 +110,9 @@
       </section>
       <section class="about container">
         <h2 class="about__title">О компании</h2>
+        <div class="about__image-wrapper">
+          <img src="img/about-year@1x.png" srcset="img/about-year@2x.png" width="150" height="320" alt="2022">
+        </div>
         <div class="about__content about-content">
           <p class="about-content__description">Мы поставляем электронные комплектующие, производим печатные платы и
             предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
@@ -118,37 +121,42 @@
             CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях
             Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших
             клиентов крупнейшие Производители светотехники России.</p>
-          <p class="about-content__description about-content__description--more">Smart Device - это команда
+          <p class="about-content__description about-content__description--close">Smart Device - это команда
             профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей
             день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.</p>
-          <p class="about-content__description about-content__description--more">Мы стремимся к постоянному развитию и
+          <p class="about-content__description about-content__description--close">Мы стремимся к постоянному развитию и
             повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий
             помогает экономить деньги и время наших клиентов</p>
-          <button class="about-content__button btn" type="button" onclick="readMore()">Подробнее</button>
+          <button class="about-content__button btn btn--more" type="button" onclick="readMore()">Подробнее</button>
         </div>
       </section>
-      <section class="products container">
-        <h2 class="products__title">Smart Device предлагает следующие товары и услуги</h2>
-        <ul class="products__list">
-          <li class="products__item">
-            <a href="#" class="products__link product-card product-card--production">
-              <h3 class="product-card__title">Производство печатных
-                плат</h3>
-            </a>
-          </li>
-          <li class="products__item">
-            <a href="#" class="products__link product-card product-card--montage">
-              <h3 class="product-card__title">Монтаж печатных плат</h3>
-            </a>
-          </li>
-          <li class="products__item">
-            <a href="#" class="products__link product-card product-card--component">
-              <h3 class="product-card__title">Комплектующие
-                для
-                светотехники</h3>
-            </a>
-          </li>
-        </ul>
+      <section class="products">
+        <div class="products__container container">
+          <h2 class="products__title">
+            <span class="products__text products__text--not-mobile">Smart Device предлагает следующие товары и услуги</span>
+            <span class="products__text products__text--mobile">Товары и услуги<br> Smart Device</span>
+          </h2>
+          <ul class="products__list">
+            <li class="products__item">
+              <a href="#" class="products__link product-card product-card--production">
+                <h3 class="product-card__title">Производство<br> печатных
+                  плат</h3>
+              </a>
+            </li>
+            <li class="products__item">
+              <a href="#" class="products__link product-card product-card--montage">
+                <h3 class="product-card__title">Монтаж печатных плат</h3>
+              </a>
+            </li>
+            <li class="products__item">
+              <a href="#" class="products__link product-card product-card--component">
+                <h3 class="product-card__title">Комплектующие
+                  для
+                  светотехники</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="main-form container">
         <h2 class="visually-hidden">Форма для вопросов</h2>

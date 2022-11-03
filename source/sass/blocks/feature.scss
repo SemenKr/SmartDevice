@@ -5,6 +5,7 @@
   border: 1px solid #ebebeb;
   border-left: 5px solid $color-neon-blue;
   min-height: 300px;
+  height: 100%;
 
   @include hover-focus {
     background-color: $color-neon-blue;
