@@ -1,0 +1,30 @@
+.main-form {
+  background-color: #00b3ff;
+  position: relative;
+
+
+  &::before {
+    content: "";
+    background-color: rgba(4, 24, 39, 0.5);
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: block;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    z-index: 1;
+  }
+}
+
+
+.main-form__container {
+  padding-top: 170px;
+  padding-bottom: 250px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 115px;
+  align-items: center;
+}
+
+.main-form__image-wrapper {
+  z-index: 1;
+}

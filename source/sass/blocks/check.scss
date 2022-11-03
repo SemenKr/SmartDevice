@@ -1,0 +1,54 @@
+.check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "PT Mono", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}
+
+.check__control {
+  font: inherit;
+  box-sizing: border-box;
+  appearance: none;
+  inline-size: 1em;
+  aspect-ratio: 1;
+  border-radius: 3px;
+  display: grid;
+
+
+  &::before {
+    content: "";
+    grid-area: 1 / 1 / 2 / 2;
+    width: 15px;
+    height: 15px;
+    transition: 120ms background ease-in-out;
+    background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='13.9425' height='14' rx='1.5' stroke='white'/%3E%3C/svg%3E");
+  }
+
+  &::after {
+    content: "";
+    grid-area: 1 / 1 / 2 / 2;
+    transform: scale(var(--is-checked, 0));
+    transition: 120ms background ease-in-out;
+    background: url("data:image/svg+xml,%3Csvg width='9' height='6' viewBox='0 0 9 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.988525 2.33333L3.7778 5L7.96171 1' stroke='white'/%3E%3C/svg%3E") no-repeat center/contain;
+    background-size: 10px;
+    margin-right: 2px;
+  }
+
+  &:checked {
+    --is-checked: 1;
+  }
+}

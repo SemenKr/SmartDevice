@@ -158,19 +158,26 @@
           </ul>
         </div>
       </section>
-      <section class="main-form container">
-        <h2 class="visually-hidden">Форма для вопросов</h2>
-        <div class="main-form__container">
-          <form class="form" action="https://echo.htmlacademy.ru" id="form" method="post">
-            <h3 class="form__title">Остались вопросы? Задайте их нам!</h3>
-            <p class="form__description">Мы проконсультируем Вас бесплатно</p>
-            <input class="form" type="text" placeholder="Имя" required>
-            <input type="tel" placeholder="Телефон" required>
-            <textarea name="question" placeholder="Ваш вопрос" id="question" cols="30" rows="10"></textarea>
-            <button type="submit">Задать вопрос</button>
-            <input type="checkbox" id="consent">
-            <label for="consent">Я согласен на обработку персональных данных</label>
-          </form>
+      <section class="main-form">
+        <div class="main-form__container container">
+          <h2 class="visually-hidden">Форма для вопросов</h2>
+          <div class="main-form__image-wrapper">
+            <img src="img/decore-planer@1x.png" srcset="img/decore-planer@2x.png" width="510" height="285" alt="Бумажный самолетик.">
+          </div>
+          <div class="main-form__wrapper">
+            <form class="form" action="https://echo.htmlacademy.ru" id="form" method="post">
+              <h3 class="form__title">Остались вопросы? Задайте их нам!</h3>
+              <p class="form__description">Мы проконсультируем Вас бесплатно</p>
+              <input class="form__input" type="text" placeholder="Имя" required>
+              <input class="form__input" type="tel" placeholder="Телефон" required>
+              <textarea class="form__input form__input--textarea" name="question" placeholder="Ваш вопрос" id="question" cols="30" rows="10"></textarea>
+              <button class="form__button btn btn--form" type="submit">Задать вопрос</button>
+              <label class="form__check check" for="consent">
+                <input class="check__control" type="checkbox" id="consent">
+                Я согласен на обработку персональных данных
+              </label>
+            </form>
+          </div>
         </div>
       </section>
     </main>

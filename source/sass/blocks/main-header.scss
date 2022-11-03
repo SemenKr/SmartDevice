@@ -9,6 +9,7 @@
   padding-top: 30px;
   padding-bottom: 35px;
   position: fixed;
+  z-index: 3;
 
   @include vp-1023 {
     padding-top: 30px;
