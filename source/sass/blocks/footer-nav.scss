@@ -1,0 +1,23 @@
+.footer-nav {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 130px;
+}
+
+.footer-nav__item {
+  margin-bottom: 5px;
+}
+
+.footer-nav__link {
+  padding: 5px 25px;
+  font-family: "PT Mono", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}

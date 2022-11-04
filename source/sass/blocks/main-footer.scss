@@ -1,0 +1,23 @@
+.main-footer {
+  background-color: $color-dark-text;
+  color: $color-default-white;
+}
+
+.main-footer__logo {
+  margin-bottom: 30px;
+}
+
+.main-footer__container {
+  max-width: 1302px;
+  padding-top: 50px;
+  padding-bottom: 55px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.main-footer__social-container {
+  margin-right: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

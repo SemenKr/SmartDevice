@@ -1,0 +1,21 @@
+.social__list {
+  padding: 0;
+  gap: 15px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.social__item {
+  width: 30px;
+  transition: all $trans-default;
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+    transition: all $trans-default;
+  }
+}
