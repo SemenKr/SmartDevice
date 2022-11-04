@@ -4,20 +4,31 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-height: 130px;
-}
 
-.footer-nav__item {
-  margin-bottom: 5px;
+  &--topics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include vp-1023 {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
 }
 
 .footer-nav__link {
-  padding: 5px 25px;
-  font-family: "PT Mono", sans-serif;
+  padding: 5px 10px;
+  font-family: "PT Mono", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   box-sizing: border-box;
-  margin-bottom: 5px;
+  display: inline-block;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 25px;
+  }
 }

@@ -5,6 +5,14 @@
 
 .main-footer__logo {
   margin-bottom: 30px;
+
+  @include vp-1023 {
+    margin-bottom: 0;
+  }
+
+  @include vp-767 {
+    margin-bottom: 20px;
+  }
 }
 
 .main-footer__container {
@@ -13,6 +21,18 @@
   padding-bottom: 55px;
   display: grid;
   grid-template-columns: 1fr 2fr;
+
+  @include vp-1023 {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 50px;
+    padding-bottom: 65px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
 }
 
 .main-footer__social-container {
@@ -20,4 +40,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include vp-1023 {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 0;
+    margin-bottom: 35px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+}
+
+.main-footer__nav-container {
+  @include vp-1023 {
+    grid-column: 1 / -1;
+  }
 }

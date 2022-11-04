@@ -159,7 +159,7 @@
           </ul>
         </div>
       </section>
-      <section class="main-form">
+      <section class="main-form"  id="form">
         <div class="main-form__container container">
           <h2 class="visually-hidden">Форма для вопросов</h2>
           <div class="main-form__image-wrapper">
@@ -167,7 +167,7 @@
               alt="Бумажный самолетик.">
           </div>
           <div class="main-form__wrapper">
-            <form class="form" action="https://echo.htmlacademy.ru" id="form" method="post">
+            <form class="form" action="https://echo.htmlacademy.ru" method="post">
               <h3 class="form__title">Остались вопросы? Задайте их нам!</h3>
               <p class="form__description">Мы проконсультируем Вас бесплатно</p>
               <input class="form__input" type="text" placeholder="Имя" required>
@@ -185,13 +185,13 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__container container">
+      <div class="main-footer__container container container--footer">
         <div class="main-footer__social-container">
           <div class="main-footer__logo logo">
             <svg class="logo__image" width="55" height="55">
               <use xlink:href="img/sprite_auto.svg#logo"></use>
             </svg>
-            <div class="logo__content">
+            <div class="logo__content logo__content--footer">
               <h2 class="logo__title">Smart Device</h2>
               <span class="logo__description">умные технологии</span>
             </div>
@@ -229,11 +229,11 @@
           <span class="accordion__target-fix" id="accordion"></span>
           <div class="accordion__item accordion__item--nav">
             <span class="accordion__target-fix" id="accordion1"></span>
-            <a class="accordion__open" href="#accordion1" id="open-accordion1" title="open">Разделы сайта</a>
-            <a class="accordion__close" href="#accordion" id="close-accordion1" title="close">Разделы сайта</a>
+            <a class="accordion__open accordion__open--line" href="#accordion1" id="open-accordion1" title="open">Разделы сайта</a>
+            <a class="accordion__close accordion__close--line" href="#accordion" id="close-accordion1" title="close">Разделы сайта</a>
             <div class="accordion__content">
               <nav class="accordion__nav">
-                <ul class="footer-nav">
+                <ul class="footer-nav footer-nav--topics">
                   <li class="footer-nav__item">
                     <a class="footer-nav__link" href="#">О Компании</a>
                   </li>
@@ -261,23 +261,23 @@
           </div>
           <div class="accordion__item accordion__item--contacts">
             <span class="accordion__target-fix" id="accordion2"></span>
-            <a class="accordion__open" href="#accordion2" id="open-accordion2" title="open">Наш офис</a>
+            <a class="accordion__open accordion__open--line" href="#accordion2" id="open-accordion2" title="open">Наш офис</a>
             <a class="accordion__close" href="#accordion" id="close-accordion2" title="close">Наш офис</a>
             <div class="accordion__content">
-              <ul>
-                <li>
-                  <a href="#">
+              <ul class="footer-nav">
+                <li class="footer-nav__item">
+                  <a class="footer-nav__link" href="#">
                     <address>г. Мытищи, Олимпийский проспект, д.10</address>
                   </a>
                 </li>
-                <li>
-                  <a href="tel:+74955894050">+7 (495) 589-40-50</a>
+                <li class="footer-nav__item">
+                  <a class="footer-nav__link" href="tel:+74955894050">+7 (495) 589-40-50</a>
                 </li>
-                <li>
-                  <a href="tel:+79253895829">+7 (925) 389-58-29</a>
+                <li class="footer-nav__item">
+                  <a class="footer-nav__link" href="tel:+79253895829">+7 (925) 389-58-29</a>
                 </li>
-                <li>
-                  <a href="tel:+79253647813">+7 (925) 364-78-13</a>
+                <li class="footer-nav__item">
+                  <a class="footer-nav__link" href="tel:+79253647813">+7 (925) 364-78-13</a>
                 </li>
               </ul>
             </div>
@@ -294,13 +294,16 @@
       <div class="modal__content">
         <h2 class="modal__title">Закажите звонок</h2>
         <p class="modal__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-        <form class="modal__form form" action="https://echo.htmlacademy.ru" method="post">
-          <input class="form" type="text" placeholder="Имя" required>
-          <input type="tel" placeholder="Телефон" required>
-          <textarea name="modal-question" placeholder="Ваш вопрос" id="modal-question" cols="30" rows="10"></textarea>
-          <button type="submit">Задать вопрос</button>
-          <input type="checkbox" id="modal-consent">
-          <label for="consent">Я согласен на обработку персональных данных</label>
+        <form class="form form--modal" action="https://echo.htmlacademy.ru" id="form-modal" method="post">
+          <input class="form__input" type="text" placeholder="Имя" required>
+          <input class="form__input" type="tel" placeholder="Телефон" required>
+          <textarea class="form__input form__input--textarea" name="question-modal" placeholder="Ваш вопрос" id="question-modal"
+            cols="30" rows="10"></textarea>
+          <button class="form__button btn btn--form" type="submit">Отправить</button>
+          <label class="form__check check" for="consent-modal">
+            <input class="check__control" type="checkbox" id="consent-modal">
+            Я согласен на обработку персональных данных
+          </label>
         </form>
         <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
           <svg width="15" height="15">

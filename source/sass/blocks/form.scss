@@ -11,6 +11,11 @@
     flex-direction: column;
     min-width: 270px;
   }
+
+  &--modal {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 
