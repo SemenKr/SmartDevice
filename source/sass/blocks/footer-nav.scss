@@ -26,6 +26,7 @@
   line-height: 22px;
   box-sizing: border-box;
   display: inline-block;
+  vertical-align: middle;
 
   @include vp-767 {
     font-size: 14px;
