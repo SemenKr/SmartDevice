@@ -67,8 +67,20 @@
     pointer-events: none;
   }
 
+  &:valid {
+    box-shadow: 0  0 5px 2px rgba(75, 252, 102, 0.5);
+    transform: translateY(-5px);
+  }
+
+  &:invalid {
+    box-shadow: 0  0 5px 2px rgba(242, 27, 19, 1);
+    transform: translateY(-5px);
+  }
+
+
   @include hover-focus {
     opacity: 0.8;
+    outline: 2px solid $color-default-white;
   }
 
   &::placeholder {
@@ -80,3 +92,12 @@
     resize: vertical;
   }
 }
+
+.form__error-text {
+  position: absolute;
+  color: $color-torch-red;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 22px;
+}
+

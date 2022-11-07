@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {readMore} from './modules/reread-more/read-more';
-import './modules/form/form';
+import {getTelMask} from './modules/form/form-tel'
 
 // ---------------------------------
 
@@ -14,11 +14,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   readMore();
+  getTelMask();
   // ---------------------------------
+
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
+    getTelMask();
     initModals();
   });
 });
