@@ -1027,7 +1027,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  border: 1px solid #ebebeb;
+  outline: 1px solid #ebebeb;
   border-left: 5px solid #00b2ff;
   min-height: 300px;
   height: 100%;
@@ -1036,7 +1036,6 @@ button,
 .feature.focus-visible:focus {
   background-color: #00b2ff;
   color: #f2f5f7;
-  border: none;
 }
 
 .feature.focus-visible:focus .feature__image,
@@ -1109,12 +1108,24 @@ button,
   margin-bottom: 20px;
 }
 
-.about-content__description--more {
-  display: block;
+.about-content__description-wrapper--close {
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  position: fixed;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
 }
 
-.about-content__description--close {
-  display: none;
+.about-content__description-wrapper--open {
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  position: static;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 .products {
@@ -2125,7 +2136,6 @@ button,
   .feature:hover:not(.focus-visible) {
     background-color: #00b2ff;
     color: #f2f5f7;
-    border: none;
   }
 
   .feature:hover:not(.focus-visible) .feature__image,

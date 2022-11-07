@@ -15,12 +15,18 @@
 .about-content__description {
   margin: 0;
   margin-bottom: 20px;
+}
 
-  &--more {
-    display: block;
+.about-content__description-wrapper {
+  &--close {
+    transition: all 0.5s ease-out;
+    position: fixed;
+    transform: scale(0);
   }
 
-  &--close {
-    display: none;
+  &--open {
+    transition: all 0.5s ease-out;
+    position: static;
+    transform: scale(1);
   }
 }
