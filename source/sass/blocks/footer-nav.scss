@@ -6,8 +6,11 @@
   flex-wrap: wrap;
 
   &--topics {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 150px;
+    gap: 0 40px;
+    align-content: flex-start;
 
     @include vp-1023 {
       display: flex;
@@ -18,7 +21,7 @@
 }
 
 .footer-nav__link {
-  padding: 5px 10px;
+  padding: 4px;
   font-family: "PT Mono", monospace;
   font-style: normal;
   font-weight: 400;

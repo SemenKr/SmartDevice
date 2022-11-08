@@ -16,11 +16,11 @@
 }
 
 .main-footer__container {
-  max-width: 1302px;
+  max-width: 1288px;
   padding-top: 50px;
-  padding-bottom: 55px;
+  padding-bottom: 30px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: auto 1fr;
 
   @include vp-1023 {
     grid-template-columns: 1fr 1fr;
@@ -59,4 +59,9 @@
   @include vp-1023 {
     grid-column: 1 / -1;
   }
+}
+
+.main-footer__social {
+  margin-left: 14px;
+  align-self: flex-start;
 }

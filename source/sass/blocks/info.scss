@@ -1,6 +1,6 @@
 .info {
   padding-top: 305px;
-  padding-bottom: 280px;
+  padding-bottom: 282px;
   background-color: #000000;
   background-image: url("../img/background-desktop@1x.jpg");
   background-repeat: no-repeat;
@@ -39,7 +39,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 1000px;
+  max-width: 1056px;
 
   @include vp-1023 {
     margin-left: 0;
@@ -61,7 +61,7 @@
   text-transform: uppercase;
   color: $color-light-text;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   @include vp-1023 {
     font-size: 64px;
@@ -82,7 +82,8 @@
   line-height: 155%;
   color: $color-light-text;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
+  padding-right: 280px;
 
 
   @include vp-767 {

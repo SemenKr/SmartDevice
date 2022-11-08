@@ -2,7 +2,7 @@
   position: relative;
   display: grid;
   column-gap: 30px;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr auto;
 
   @include vp-1023 {
     grid-template-columns: 1fr 1fr;
@@ -24,6 +24,7 @@
 
   &--contacts {
     grid-column: 2 / 3;
+    margin-right: 26px;
 
     @include vp-767 {
       grid-column: 1 / -1;
@@ -34,7 +35,7 @@
 .accordion__open,
 .accordion__close {
   background-color: $color-dark-text;
-  padding: 20px 10px;
+  padding: 5px 10px;
   display: flex;
   justify-content: space-between;
   position: relative;

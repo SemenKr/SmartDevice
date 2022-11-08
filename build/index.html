@@ -14,7 +14,6 @@
   <link rel="icon" href="./img/favicon/32x32.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-
 <body>
   <div class="wrapper">
     <header class="main-header ">
@@ -113,7 +112,10 @@
       <section class="about container">
         <h2 class="about__title">О компании</h2>
         <div class="about__image-wrapper">
-          <img src="img/about-year@1x.png" srcset="img/about-year@2x.png" width="150" height="320" alt="2022">
+          <picture>
+            <source srcset="img/about-year@1x.webp"  type="image/webp">
+            <img src="img/about-year@1x.png" srcset="img/about-year@2x.png" width="150" height="320" alt="2022">
+          </picture>
         </div>
         <div class="about__content about-content">
           <p class="about-content__description">Мы поставляем электронные комплектующие, производим печатные платы и
@@ -167,8 +169,11 @@
         <div class="main-form__container container">
           <h2 class="visually-hidden">Форма для вопросов</h2>
           <div class="main-form__image-wrapper">
-            <img src="img/decore-planer@1x.png" srcset="img/decore-planer@2x.png" width="510" height="285"
-              alt="Бумажный самолетик.">
+            <picture>
+              <source srcset="img/decore-planer@1x.webp" type="image/webp">
+              <img src="img/decore-planer@1x.png" srcset="img/decore-planer@2x.png" width="510" height="285"
+                alt="Бумажный самолетик.">
+            </picture>
           </div>
           <div class="main-form__wrapper">
             <form class="form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
@@ -187,7 +192,7 @@
                 </label>
               </div>
               <textarea class="form__input form__input--textarea" name="question" placeholder="Ваш вопрос" id="question"
-                cols="30" rows="10"></textarea>
+                cols="30" rows="6"></textarea>
               <button class="form__button btn btn--form" type="submit">Задать вопрос</button>
               <div class="form__element">
                 <label class="form__check check" for="consent">
@@ -259,7 +264,7 @@
                     <a class="footer-nav__link" href="#">Продукты</a>
                   </li>
                   <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">Производство печатных плат</a>
+                    <a class="footer-nav__link" href="#">Производство печатных<br> плат</a>
                   </li>
                   <li class="footer-nav__item">
                     <a class="footer-nav__link" href="#">Монтаж печатных плат</a>
@@ -286,7 +291,7 @@
               <ul class="footer-nav">
                 <li class="footer-nav__item">
                   <a class="footer-nav__link" href="#">
-                    <address>г. Мытищи, Олимпийский проспект, д.10</address>
+                    <address>г. Мытищи, Олимпийский проспект,<br> д.10</address>
                   </a>
                 </li>
                 <li class="footer-nav__item">
@@ -315,12 +320,20 @@
         <p class="modal__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <form class="form form--modal" action="https://echo.htmlacademy.ru" method="post" autocomplete="off"
           id="form-modal">
-          <input class="form__input form__input--req form__input--name-modal"  type="text" name="name" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё]+$" minlength="1"
-            maxlength="25" required data-focus>
-          <input class="form__input form__input--req form__input--tel-modal" type="tel" name="tel" placeholder="Телефон" minlength="17"
-            maxlength="18" required>
+          <div class="form__element">
+            <label class="form__label form__label--name" for="name-modal">
+              <input class="form__input form__input--req form__input--name-modal"  type="text" id="name-modal" name="name" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё]+$" minlength="1"
+                maxlength="25" required data-focus>
+            </label>
+          </div>
+          <div class="form__element">
+            <label class="form__label form__label--tel" for="tel-modal">
+              <input class="form__input form__input--req form__input--tel-modal" type="tel" id="tel-modal" name="tel" placeholder="Телефон" minlength="17"
+                maxlength="18" required>
+            </label>
+          </div>
           <textarea class="form__input form__input--textarea" name="question-modal" placeholder="Ваш вопрос"
-            id="question-modal" cols="30" rows="10" minlength="1"></textarea>
+            id="question-modal" cols="30" rows="6" minlength="1"></textarea>
           <button class="form__button btn btn--form" type="submit">Отправить</button>
           <label class="form__check check" for="consent-modal">
             <input class="check__control" type="checkbox" name="agree" id="consent-modal" required>

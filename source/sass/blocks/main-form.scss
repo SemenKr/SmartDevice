@@ -22,11 +22,11 @@
 
 
 .main-form__container {
-  padding-top: 170px;
-  padding-bottom: 250px;
+  padding-top: 166px;
+  padding-bottom: 252px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 115px;
+  column-gap: 40px;
   align-items: center;
   max-width: 1302px;
 
@@ -43,6 +43,7 @@
 
 .main-form__image-wrapper {
   z-index: 1;
+  padding-top: 22px;
 
   @include vp-1023 {
     display: none;

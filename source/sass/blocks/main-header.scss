@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   color: $color-light-text;
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 35px;
   position: fixed;
   z-index: 3;
@@ -36,6 +36,7 @@
 
 .main-header__button {
   margin-left: auto;
+  margin-right: 66px;
 
   @include vp-1023 {
     display: none;
