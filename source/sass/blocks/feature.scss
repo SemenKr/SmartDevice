@@ -7,6 +7,10 @@
   min-height: 300px;
   height: 100%;
 
+  @include vp-1023 {
+    padding: 40px 40px 32px;
+  }
+
   @include hover-focus {
     background-color: $color-neon-blue;
     color: $color-light-text;
@@ -20,18 +24,32 @@
 
 .feature__image {
   margin-bottom: 24px;
+
+  @include vp-1023 {
+    margin-bottom: 15px;
+  }
 }
 
 .feature__title {
   margin: 0;
   margin-bottom: 0;
   font-size: 24px;
+
   font-weight: 400;
+
+  @include vp-1023 {
+    line-height: 1.4;
+  }
 }
 
 .feature__description {
   font-family: "PT Mono", sans-serif;
   font-size: 16px;
+
+  @include vp-1023 {
+    margin: 10px 0 0;
+    line-height: 1.35;
+  }
 }
 
 .feature__image,

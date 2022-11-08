@@ -8,8 +8,8 @@
   box-sizing: border-box;
 
   @include vp-1023 {
-    padding-top: 40px;
-    padding-bottom: 80px;
+    padding-top: 36px;
+    padding-bottom: 55px;
     column-gap: 29px;
   }
 
@@ -26,6 +26,10 @@
   line-height: 51px;
   margin: 0;
   margin-bottom: -6px;
+
+  @include vp-1023 {
+    margin-bottom: 11px;
+  }
 
   @include vp-767 {
     font-size: 28px;
