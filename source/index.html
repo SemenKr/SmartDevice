@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Описание проекта">
   <title>SmartDevice</title>
-  <link rel="preload" href="/fonts/roboto-condensed.woff2"  as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="/fonts/roboto-condensed-bold.woff2"  as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="/fonts/PT-Mono_Regular.woff2"  as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="/fonts/roboto-condensed.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/roboto-condensed-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/PTMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" href="./img/favicon/32x32.png">
   <link rel="icon" href="./img/favicon/32x32.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.min.css">
@@ -123,14 +123,14 @@
             CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях
             Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших
             клиентов крупнейшие Производители светотехники России.</p>
-            <div class="about-content__description-wrapper about-content__description-wrapper--close">
-              <p class="about-content__description">Smart Device - это команда
-                профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей
-                день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.</p>
-              <p class="about-content__description">Мы стремимся к постоянному развитию и
-                повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий
-                помогает экономить деньги и время наших клиентов</p>
-            </div>
+          <div class="about-content__description-wrapper about-content__description-wrapper--close">
+            <p class="about-content__description">Smart Device - это команда
+              профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей
+              день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.</p>
+            <p class="about-content__description">Мы стремимся к постоянному развитию и
+              повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий
+              помогает экономить деньги и время наших клиентов</p>
+          </div>
           <button class="about-content__button btn btn--more" type="button">Подробнее</button>
         </div>
       </section>
@@ -163,7 +163,7 @@
           </ul>
         </div>
       </section>
-      <section class="main-form"  id="form">
+      <section class="main-form" id="form">
         <div class="main-form__container container">
           <h2 class="visually-hidden">Форма для вопросов</h2>
           <div class="main-form__image-wrapper">
@@ -176,15 +176,14 @@
               <p class="form__description">Мы проконсультируем Вас бесплатно</p>
               <div class="form__element">
                 <label class="form__label form__label--name" for="name">
-                  <input class="form__input form__input--name" type="text" id="name" name="name" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё]+$" minlength="1" maxlength="25" required
-                  data-pristine-required-message="Обязательное поле"
-                  data-pristine-minlength-message="Минимальная длина 1 символа"
-                  data-pristine-maxlength-message="Максимальная длина 25 символов">
+                  <input class="form__input form__input--req form__input--name" type="text" id="name" name="name" placeholder="Имя"
+                    pattern="^[a-zA-ZА-Яа-яЁё]+$" minlength="1" maxlength="25" required>
                 </label>
               </div>
               <div class="form__element">
                 <label class="form__label form__label--tel" for="tel">
-                  <input class="form__input form__input--tel" id="tel" name="tel" type="tel" placeholder="Телефон" minlength="17" maxlength="18" required>
+                  <input class="form__input form__input--req form__input--tel" id="tel" name="tel" type="tel" placeholder="Телефон"
+                    minlength="17" maxlength="18" required>
                 </label>
               </div>
               <textarea class="form__input form__input--textarea" name="question" placeholder="Ваш вопрос" id="question"
@@ -204,7 +203,7 @@
     <footer class="main-footer">
       <div class="main-footer__container container container--footer">
         <div class="main-footer__social-container">
-          <div class="main-footer__logo logo">
+          <a href="#index.html" class="main-footer__logo logo">
             <svg class="logo__image" width="55" height="55">
               <use xlink:href="img/sprite_auto.svg#logo"></use>
             </svg>
@@ -212,7 +211,7 @@
               <h2 class="logo__title">Smart Device</h2>
               <span class="logo__description">умные технологии</span>
             </div>
-          </div>
+          </a>
           <div class="main-footer__social social">
             <ul class="social__list list">
               <li class="social__item">
@@ -246,8 +245,10 @@
           <span class="accordion__target-fix" id="accordion"></span>
           <div class="accordion__item accordion__item--nav">
             <span class="accordion__target-fix" id="accordion1"></span>
-            <a class="accordion__open accordion__open--line" href="#accordion1" id="open-accordion1" title="open">Разделы сайта</a>
-            <a class="accordion__close accordion__close--line" href="#accordion" id="close-accordion1" title="close">Разделы сайта</a>
+            <a class="accordion__open accordion__open--line" href="#accordion1" id="open-accordion1"
+              title="open">Разделы сайта</a>
+            <a class="accordion__close accordion__close--line" href="#accordion" id="close-accordion1"
+              title="close">Разделы сайта</a>
             <div class="accordion__content">
               <nav class="accordion__nav">
                 <ul class="footer-nav footer-nav--topics">
@@ -278,7 +279,8 @@
           </div>
           <div class="accordion__item accordion__item--contacts">
             <span class="accordion__target-fix" id="accordion2"></span>
-            <a class="accordion__open accordion__open--line" href="#accordion2" id="open-accordion2" title="open">Наш офис</a>
+            <a class="accordion__open accordion__open--line" href="#accordion2" id="open-accordion2" title="open">Наш
+              офис</a>
             <a class="accordion__close" href="#accordion" id="close-accordion2" title="close">Наш офис</a>
             <div class="accordion__content">
               <ul class="footer-nav">
@@ -311,19 +313,22 @@
       <div class="modal__content">
         <h2 class="modal__title">Закажите звонок</h2>
         <p class="modal__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-        <form class="form form--modal" action="https://echo.htmlacademy.ru" method="post" autocomplete="off" id="form-modal">
-          <input class="form__input" type="text" placeholder="Имя" required>
-          <input class="form__input form__input--tel" type="tel" placeholder="Телефон" required>
-          <textarea class="form__input form__input--textarea" name="question-modal" placeholder="Ваш вопрос" id="question-modal"
-            cols="30" rows="10"></textarea>
+        <form class="form form--modal" action="https://echo.htmlacademy.ru" method="post" autocomplete="off"
+          id="form-modal">
+          <input class="form__input form__input--req form__input--name-modal"  type="text" name="name" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё]+$" minlength="1"
+            maxlength="25" required data-focus>
+          <input class="form__input form__input--req form__input--tel-modal" type="tel" name="tel" placeholder="Телефон" minlength="17"
+            maxlength="18" required>
+          <textarea class="form__input form__input--textarea" name="question-modal" placeholder="Ваш вопрос"
+            id="question-modal" cols="30" rows="10" minlength="1"></textarea>
           <button class="form__button btn btn--form" type="submit">Отправить</button>
           <label class="form__check check" for="consent-modal">
-            <input class="check__control" type="checkbox" id="consent-modal" required>
+            <input class="check__control" type="checkbox" name="agree" id="consent-modal" required>
             Я согласен на обработку персональных данных
           </label>
         </form>
         <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg  width="20" height="20">
+          <svg width="20" height="20">
             <use xlink:href="img/sprite_auto.svg#icon-close"></use>
           </svg>
         </button>

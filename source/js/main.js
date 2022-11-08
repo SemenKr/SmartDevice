@@ -3,6 +3,10 @@ import {initModals} from './modules/modals/init-modals';
 import {readMore} from './modules/reread-more/read-more';
 import {getTelMask} from './modules/form/form-tel'
 
+const tel = document.querySelector('.form__input--tel');
+const telModal = document.querySelector('.form__input--tel-modal');
+
+
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -14,17 +18,18 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   readMore();
-  getTelMask();
+  getTelMask(tel);
   // ---------------------------------
 
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    getTelMask();
+    getTelMask(telModal);
     initModals();
   });
 });
+
 
 // ---------------------------------
 

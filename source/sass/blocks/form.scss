@@ -62,19 +62,16 @@
   color: $color-default-white;
   width: 100%;
 
+  &--req {
+    &:valid {
+      box-shadow: 0  0 5px 2px rgba(75, 252, 102, 0.5);
+      transform: translateY(-5px);
+    }
+  }
+
   &:disabled {
     opacity: 0.5;
     pointer-events: none;
-  }
-
-  &:valid {
-    box-shadow: 0  0 5px 2px rgba(75, 252, 102, 0.5);
-    transform: translateY(-5px);
-  }
-
-  &:invalid {
-    box-shadow: 0  0 5px 2px rgba(242, 27, 19, 1);
-    transform: translateY(-5px);
   }
 
 
@@ -91,13 +88,5 @@
     grid-column: 1 / -1;
     resize: vertical;
   }
-}
-
-.form__error-text {
-  position: absolute;
-  color: $color-torch-red;
-  padding: 5px;
-  font-size: 16px;
-  line-height: 22px;
 }
 

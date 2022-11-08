@@ -405,7 +405,7 @@ template {
   font-weight: 400;
   font-family: "PT Mono";
   font-display: swap;
-  src: url("../fonts/PT-Mono_Regular.woff2") format("woff2"), url("../fonts/PT-Mono_Regular.woff") format("woff");
+  src: url("../fonts/PTMono-Regular.woff2") format("woff2"), url("../fonts/PTMono-Regular.woff") format("woff");
 }
 
 *,
@@ -1333,12 +1333,7 @@ button,
   width: 100%;
 }
 
-.form__input:disabled {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-.form__input:valid {
+.form__input--req:valid {
   -webkit-box-shadow: 0 0 5px 2px rgba(75, 252, 102, 0.5);
   box-shadow: 0 0 5px 2px rgba(75, 252, 102, 0.5);
   -webkit-transform: translateY(-5px);
@@ -1346,12 +1341,9 @@ button,
   transform: translateY(-5px);
 }
 
-.form__input:invalid {
-  -webkit-box-shadow: 0 0 5px 2px rgb(242, 27, 19);
-  box-shadow: 0 0 5px 2px rgb(242, 27, 19);
-  -webkit-transform: translateY(-5px);
-  -ms-transform: translateY(-5px);
-  transform: translateY(-5px);
+.form__input:disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 .form__input.focus-visible:focus {
@@ -1382,14 +1374,6 @@ button,
 .form__input--textarea {
   grid-column: 1/-1;
   resize: vertical;
-}
-
-.form__error-text {
-  position: absolute;
-  color: #ec0505;
-  padding: 5px;
-  font-size: 16px;
-  line-height: 22px;
 }
 
 .check {

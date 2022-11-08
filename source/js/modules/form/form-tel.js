@@ -1,4 +1,3 @@
-const tel = document.querySelector('.form__input--tel');
 
 const prefixNumber = (str) => {
   if (str === '7') {
@@ -15,13 +14,13 @@ const prefixNumber = (str) => {
 
 // ======================================
 
-const getTelMask = () => {
-  tel.addEventListener('input', (e) => {
-    const value = tel.value.replace(/\D+/g, '');
+const getTelMask = (elem) => {
+  elem.addEventListener('input', (e) => {
+    const value = elem.value.replace(/\D+/g, '');
     const numberLength = 11;
 
     let result;
-    if (tel.value.includes('+8') || tel.value[0] === '8') {
+    if (elem.value.includes('+8') || elem.value[0] === '8') {
       result = '';
     } else {
       result = '+';
@@ -48,7 +47,7 @@ const getTelMask = () => {
       result += value[i];
     }
     //
-    tel.value = result;
+    elem.value = result;
   });
 
 }

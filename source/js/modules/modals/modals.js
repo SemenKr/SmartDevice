@@ -199,6 +199,7 @@ export class Modals {
 
     setTimeout(() => {
       document.addEventListener('click', this._documentClickHandler);
+      document.querySelector('input[data-focus]').focus();
     }, this._eventTimeout);
 
     this._setSettings('default');

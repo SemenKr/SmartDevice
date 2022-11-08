@@ -1,6 +1,7 @@
 import {Modals} from './modals';
 
 let modals;
+const nameModal = document.querySelector('.form__input--name-modal');
 
 // Здесь реализован пример открытия модалки через колбэк закрытия
 // const openModalInCloseCallback = (name, context = this) => {
@@ -32,6 +33,7 @@ const initModals = () => {
     setTimeout(() => {
       el.classList.remove('modal--preload');
     }, 100);
+    nameModal.focus();
   });
   modals = new Modals(settings);
   // Используйте в разработке экспортируемую переменную modals, window сделан для бэкэнда
