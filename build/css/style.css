@@ -770,7 +770,7 @@ button,
 
 .modal__content {
   position: relative;
-  width: 600px;
+  width: 500px;
   padding: 40px;
   background-color: #00b2ff;
 }
@@ -823,7 +823,7 @@ button,
   line-height: 42px;
   color: #ffffff;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 3px;
 }
 
 .modal__description {
@@ -2000,7 +2000,7 @@ button,
     margin-top: 5px;
   }
 
-  .logo__image {
+  .logo__image--header {
     width: 35px;
     height: 35px;
   }
@@ -2078,8 +2078,8 @@ button,
   }
 
   .about {
-    padding-top: 25px;
-    padding-bottom: 80px;
+    padding-top: 8px;
+    padding-bottom: 60px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
@@ -2098,15 +2098,23 @@ button,
     line-height: 19px;
   }
 
+  .about-content__description {
+    margin-bottom: 17px;
+  }
+
+  .about-content__description-plus {
+    display: none;
+  }
+
   .products {
-    padding-top: 50px;
+    padding-top: 46px;
     padding-bottom: 86px;
   }
 
   .products__title {
     font-size: 28px;
     line-height: 39px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .products__text--mobile {
@@ -2118,7 +2126,12 @@ button,
   }
 
   .product-card {
-    min-height: 270px;
+    min-height: 250px;
+  }
+
+  .product-card::after {
+    width: 40px;
+    height: 40px;
   }
 
   .product-card--production {
@@ -2134,11 +2147,12 @@ button,
   }
 
   .product-card__title {
-    padding: 30px 90px 50px 30px;
+    padding: 30px 107px 50px 30px;
     font-size: 18px;
   }
 
   .main-form__container {
+    padding-top: 46px;
     padding-bottom: 90px;
   }
 
@@ -2163,8 +2177,12 @@ button,
     line-height: 19px;
   }
 
+  .form__check {
+    padding-top: 9px;
+  }
+
   .main-footer__logo {
-    margin-bottom: 20px;
+    margin-bottom: 6px;
   }
 
   .main-footer__container {
@@ -2182,6 +2200,13 @@ button,
     margin-bottom: 25px;
   }
 
+  .main-footer__social {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin: 0;
+  }
+
   .accordion {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -2193,17 +2218,18 @@ button,
 
   .accordion__item--contacts {
     grid-column: 1/-1;
+    margin: 0;
+  }
+
+  .accordion__open,
+  .accordion__close {
+    padding: 20px 10px;
   }
 
   .accordion__open--line,
   .accordion__close--line {
     border-bottom: 1px solid #f2f5f7;
     border-top: 1px solid #f2f5f7;
-    padding-right: 25px;
-    padding-left: 25px;
-  }
-
-  .accordion a {
     padding-right: 25px;
     padding-left: 25px;
   }
@@ -2235,8 +2261,8 @@ button,
     transition: all 0.3s ease;
     background-color: #041827;
     height: 0;
-    margin: -1px auto 0;
-    padding: 0 2.5%;
+    margin: 0;
+    padding: 0 24px;
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -2248,8 +2274,6 @@ button,
     transition: all 0.3s ease;
     display: block;
     height: auto;
-    padding-bottom: 25px;
-    padding-top: 10px;
   }
 
   .accordion span:target ~ .accordion__close::after {
@@ -2262,6 +2286,10 @@ button,
     right: 26px;
     top: 20px;
     background-image: url("data:image/svg+xml,%0A%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 7H15V8H0V7Z' fill='%23F8FDFF'/%3E%3C/svg%3E");
+  }
+
+  .footer-nav {
+    margin: 0;
   }
 
   .footer-nav__link {

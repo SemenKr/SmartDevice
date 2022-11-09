@@ -28,6 +28,7 @@
 
     @include vp-767 {
       grid-column: 1 / -1;
+      margin: 0;
     }
   }
 }
@@ -46,6 +47,11 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
+  @include vp-767 {
+    padding: 20px 10px;
+  }
+
+
   &--line {
     @include vp-767 {
       border-bottom: 1px solid $color-light-text;
@@ -63,11 +69,6 @@
 .accordion a {
   color: $color-default-white;
   text-decoration: none;
-
-  @include vp-767 {
-    padding-right: 25px;
-    padding-left: 25px;
-  }
 }
 
 .accordion__open::after,
@@ -96,8 +97,8 @@
     transition: all $trans-default;
     background-color: $color-dark-text;
     height: 0;
-    margin: -1px auto 0;
-    padding: 0 2.5%;
+    margin: 0;
+    padding: 0 24px;
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -109,8 +110,6 @@
     transition: all $trans-default;
     display: block;
     height: auto;
-    padding-bottom: 25px;
-    padding-top: 10px;
   }
 }
 

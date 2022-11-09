@@ -11,7 +11,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 20px;
+    margin-bottom: 6px;
   }
 }
 
@@ -64,4 +64,9 @@
 .main-footer__social {
   margin-left: 14px;
   align-self: flex-start;
+
+  @include vp-767 {
+    align-self: center;
+    margin: 0;
+  }
 }

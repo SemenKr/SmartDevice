@@ -17,6 +17,10 @@
 .about-content__description {
   margin: 0;
   margin-bottom: 20px;
+
+  @include vp-767 {
+    margin-bottom: 17px;
+  }
 }
 
 .about-content__description-wrapper {
@@ -30,5 +34,11 @@
     transition: all 0.5s ease-out;
     position: static;
     transform: scale(1);
+  }
+}
+
+.about-content__description-plus {
+  @include vp-767 {
+    display: none;
   }
 }

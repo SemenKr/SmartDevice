@@ -14,12 +14,13 @@
   <link rel="icon" href="./img/favicon/32x32.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
   <div class="wrapper">
     <header class="main-header ">
       <div class="main-header__container container">
         <a class="main-header__logo logo">
-          <svg class="logo__image" width="55" height="55">
+          <svg class="logo__image logo__image--header" width="55" height="55">
             <use xlink:href="img/sprite_auto.svg#logo"></use>
           </svg>
           <div class="logo__content">
@@ -116,7 +117,7 @@
         <h2 class="about__title">О компании</h2>
         <div class="about__image-wrapper">
           <picture>
-            <source srcset="img/about-year@1x.webp"  type="image/webp">
+            <source srcset="img/about-year@1x.webp" type="image/webp">
             <img src="img/about-year@1x.png" srcset="img/about-year@2x.png" width="150" height="320" alt="2022">
           </picture>
         </div>
@@ -125,9 +126,13 @@
             предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
           </p>
           <p class="about-content__description">Наши поставщики - мировые производители электронных компонентов: OSRAM,
-            CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях
-            Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших
-            клиентов крупнейшие Производители светотехники России.</p>
+            CREE, HOLGLITRONIC, REFOND.
+            <span class="about-content__description-plus"> Печатные платы и комплектующие Service Devices применяются
+              на предприятиях
+              Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших
+              клиентов крупнейшие Производители светотехники России.
+            </span>
+          </p>
           <div class="about-content__description-wrapper about-content__description-wrapper--close">
             <p class="about-content__description">Smart Device - это команда
               профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей
@@ -184,18 +189,18 @@
               <p class="form__description">Мы проконсультируем Вас бесплатно</p>
               <div class="form__element">
                 <label class="form__label form__label--name" for="name">
-                  <input class="form__input form__input--req form__input--name" type="text" id="name" name="name" placeholder="Имя"
-                    pattern="^[a-zA-ZА-Яа-яЁё]+$" minlength="1" maxlength="25" required>
+                  <input class="form__input form__input--req form__input--name" type="text" id="name" name="name"
+                    placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё]+$" minlength="1" maxlength="25" required>
                 </label>
               </div>
               <div class="form__element">
                 <label class="form__label form__label--tel" for="tel">
-                  <input class="form__input form__input--req form__input--tel" id="tel" name="tel" type="tel" placeholder="Телефон"
-                    minlength="17" maxlength="18" required>
+                  <input class="form__input form__input--req form__input--tel" id="tel" name="tel" type="tel"
+                    placeholder="Телефон" minlength="17" maxlength="18" required>
                 </label>
               </div>
               <textarea class="form__input form__input--textarea" name="question" placeholder="Ваш вопрос" id="question"
-                cols="30" rows="5"></textarea>
+                cols="30" rows="6"></textarea>
               <button class="form__button btn btn--form" type="submit">Задать вопрос</button>
               <div class="form__element">
                 <label class="form__check check" for="consent">
@@ -289,12 +294,12 @@
             <span class="accordion__target-fix" id="accordion2"></span>
             <a class="accordion__open accordion__open--line" href="#accordion2" id="open-accordion2" title="open">Наш
               офис</a>
-            <a class="accordion__close" href="#accordion" id="close-accordion2" title="close">Наш офис</a>
+            <a class="accordion__close accordion__close--line" href="#accordion" id="close-accordion2" title="close">Наш офис</a>
             <div class="accordion__content">
               <ul class="footer-nav">
                 <li class="footer-nav__item">
                   <a class="footer-nav__link" href="#">
-                    <address>г. Мытищи, Олимпийский проспект,<br> д.10</address>
+                    <address>г. Мытищи, Олимпийский проспект, <br> д.10</address>
                   </a>
                 </li>
                 <li class="footer-nav__item">
@@ -325,18 +330,19 @@
           id="form-modal">
           <div class="form__element">
             <label class="form__label form__label--name" for="name-modal">
-              <input class="form__input form__input--req form__input--name-modal"  type="text" id="name-modal" name="name" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё]+$" minlength="1"
-                maxlength="25" required data-focus>
+              <input class="form__input form__input--req form__input--name-modal" type="text" id="name-modal"
+                name="name" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё]+$" minlength="1" maxlength="25" required
+                data-focus>
             </label>
           </div>
           <div class="form__element">
             <label class="form__label form__label--tel" for="tel-modal">
-              <input class="form__input form__input--req form__input--tel-modal" type="tel" id="tel-modal" name="tel" placeholder="Телефон" minlength="17"
-                maxlength="18" required>
+              <input class="form__input form__input--req form__input--tel-modal" type="tel" id="tel-modal" name="tel"
+                placeholder="Телефон" minlength="17" maxlength="18" required>
             </label>
           </div>
           <textarea class="form__input form__input--textarea" name="question-modal" placeholder="Ваш вопрос"
-            id="question-modal" cols="30" rows="5" minlength="1"></textarea>
+            id="question-modal" cols="30" rows="6" minlength="1"></textarea>
           <button class="form__button btn btn--form" type="submit">Отправить</button>
           <label class="form__check check" for="consent-modal">
             <input class="check__control" type="checkbox" name="agree" id="consent-modal" required>

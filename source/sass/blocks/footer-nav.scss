@@ -5,6 +5,10 @@
   flex-direction: column;
   flex-wrap: wrap;
 
+  @include vp-767 {
+    margin: 0;
+  }
+
   &--topics {
     display: flex;
     flex-wrap: wrap;

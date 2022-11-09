@@ -16,7 +16,7 @@
   }
 
   @include vp-767 {
-    min-height: 270px;
+    min-height: 250px;
   }
 
   &--red {
@@ -43,6 +43,11 @@
     background-repeat: no-repeat;
     background-position: center;
     align-self: flex-end;
+
+    @include vp-767 {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &--production {
@@ -143,7 +148,7 @@
   }
 
   @include vp-767 {
-    padding: 30px 90px 50px 30px;
+    padding: 30px 107px 50px 30px;
     font-size: 18px;
   }
 }
