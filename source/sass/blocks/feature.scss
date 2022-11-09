@@ -11,6 +11,10 @@
     padding: 40px 40px 32px;
   }
 
+  @include vp-767 {
+    padding: 28px 35px 52px 24px;
+  }
+
   @include hover-focus {
     background-color: $color-neon-blue;
     color: $color-light-text;
@@ -40,6 +44,11 @@
   @include vp-1023 {
     line-height: 1.4;
   }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 28.13px;
+  }
 }
 
 .feature__description {
@@ -49,6 +58,12 @@
   @include vp-1023 {
     margin: 10px 0 0;
     line-height: 1.35;
+  }
+
+  @include vp-767 {
+    font-family: "PT Mono", sans-serif;
+    font-size: 14px;
+    line-height: 18.9px;
   }
 }
 

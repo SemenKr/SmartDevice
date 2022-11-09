@@ -630,6 +630,7 @@ button,
 .container {
   width: 100%;
   max-width: 1920px;
+  min-width: 270px;
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -967,6 +968,7 @@ button,
   background-size: cover;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  min-width: 320px;
 }
 
 .info__container {
@@ -1005,6 +1007,14 @@ button,
   margin: 0;
   margin-bottom: 48px;
   padding-right: 280px;
+}
+
+.info__button {
+  word-wrap: none;
+}
+
+.info__button-text--mobile {
+  display: none;
 }
 
 .features-list {
@@ -1765,7 +1775,7 @@ button,
 
   .info__description {
     padding-right: 10px;
-    margin: 0 0 58px;
+    margin: 0 0 48px;
   }
 
   .info__button {
@@ -1982,8 +1992,12 @@ button,
   }
 
   .main-header {
-    padding-top: 20px;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+
+  .main-header__nav {
+    margin-top: 5px;
   }
 
   .logo__image {
@@ -2000,7 +2014,7 @@ button,
   }
 
   .info {
-    padding-top: 150px;
+    padding-top: 154px;
     padding-bottom: 190px;
     background-image: url("../img/background-mobile@2x.jpg");
   }
@@ -2013,6 +2027,7 @@ button,
   .info__title {
     font-size: 36px;
     line-height: 1;
+    margin-bottom: 16px;
   }
 
   .info__description {
@@ -2020,11 +2035,41 @@ button,
     line-height: 1.55;
   }
 
+  .info__button {
+    padding: 10px 30px;
+    margin: 0;
+    min-width: 270px;
+  }
+
+  .info__button-text--desktop {
+    display: none;
+  }
+
+  .info__button-text--mobile {
+    display: block;
+  }
+
   .features-list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     -ms-grid-rows: (1fr)[4];
     grid-template-rows: repeat(4, 1fr);
+    gap: 27px;
+  }
+
+  .feature {
+    padding: 28px 35px 52px 24px;
+  }
+
+  .feature__title {
+    font-size: 20px;
+    line-height: 28.13px;
+  }
+
+  .feature__description {
+    font-family: "PT Mono", sans-serif;
+    font-size: 14px;
+    line-height: 18.9px;
   }
 
   .features {
