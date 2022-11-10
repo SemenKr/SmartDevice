@@ -3,8 +3,8 @@ import {initModals} from './modules/modals/init-modals';
 import {readMore} from './modules/reread-more/read-more';
 import {getTelMask} from './modules/form/form-tel'
 
-const tel = document.querySelector('.form__input--tel');
-const telModal = document.querySelector('.form__input--tel-modal');
+const tel = document.querySelector('input[data-tel]');
+const telModal = document.querySelector('input[data-tel-modal]');
 
 
 // ---------------------------------

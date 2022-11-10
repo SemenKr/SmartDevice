@@ -1,7 +1,7 @@
 import {Modals} from './modals';
 
 let modals;
-const nameModal = document.querySelector('.form__input--name-modal');
+const nameModal = document.querySelector('input[data-name]');
 
 // Здесь реализован пример открытия модалки через колбэк закрытия
 // const openModalInCloseCallback = (name, context = this) => {

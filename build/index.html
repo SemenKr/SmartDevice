@@ -24,7 +24,7 @@
             <use xlink:href="img/sprite_auto.svg#logo"></use>
           </svg>
           <div class="logo__content">
-            <h2 class="logo__title">Smart Device</h2>
+            <h2>Smart Device</h2>
             <span class="logo__description">умные технологии</span>
           </div>
         </a>
@@ -54,7 +54,7 @@
     <main>
       <section class="info">
         <div class="info__container container">
-          <h1 class="info__title">Печатные платы</h1>
+          <h1>Печатные платы</h1>
           <p class="info__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
           <a class="info__button btn btn--info" href="#form">
             <span class="info__button-text info__button-text--desktop">Получить бесплатную консультацию</span>
@@ -114,7 +114,7 @@
         </div>
       </section>
       <section class="about container">
-        <h2 class="about__title">О компании</h2>
+        <h2>О компании</h2>
         <div class="about__image-wrapper">
           <picture>
             <source srcset="img/about-year@1x.webp" type="image/webp">
@@ -146,7 +146,7 @@
       </section>
       <section class="products">
         <div class="products__container container">
-          <h2 class="products__title">
+          <h2>
             <span class="products__text products__text--not-mobile">Smart Device предлагает следующие товары и
               услуги</span>
             <span class="products__text products__text--mobile">Товары и услуги<br> Smart Device</span>
@@ -184,23 +184,24 @@
             </picture>
           </div>
           <div class="main-form__wrapper">
+            <h3>Остались вопросы? Задайте их нам!</h3>
+            <p class="main-form__description">Мы проконсультируем Вас бесплатно</p>
             <form class="form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
-              <h3 class="form__title">Остались вопросы? Задайте их нам!</h3>
-              <p class="form__description">Мы проконсультируем Вас бесплатно</p>
-              <div class="form__element">
-                <label class="form__label form__label--name" for="name">
-                  <input class="form__input form__input--req form__input--name" type="text" id="name" name="name"
-                    placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё]+$" minlength="1" maxlength="25" required>
-                </label>
+              <div class="form__input form__input--name">
+                <label class="visually-hidden" for="name">Введите имя</label>
+                <input type="text" id="name" name="name" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё]+$" minlength="1"
+                  maxlength="25" required>
               </div>
-              <div class="form__element">
-                <label class="form__label form__label--tel" for="tel">
-                  <input class="form__input form__input--req form__input--tel" id="tel" name="tel" type="tel"
-                    placeholder="Телефон" minlength="17" maxlength="18" required>
-                </label>
+              <div class="form__input form__input--tel">
+                <label class="visually-hidden" for="tel">Введите номер телефона</label>
+                <input id="tel" data-tel name="tel" type="tel" placeholder="Телефон" minlength="17" maxlength="18"
+                  required>
               </div>
-              <textarea class="form__input form__input--textarea" name="question" placeholder="Ваш вопрос" id="question"
-                cols="30" rows="6"></textarea>
+              <div class="form__textarea">
+                <label class="visually-hidden" for="question">Задайте вопрос</label>
+                <textarea class="form__input form__input--textarea" name="question" placeholder="Ваш вопрос"
+                  id="question"></textarea>
+              </div>
               <button class="form__button btn btn--form" type="submit">Задать вопрос</button>
               <div class="form__element">
                 <label class="form__check check" for="consent">
@@ -221,7 +222,7 @@
               <use xlink:href="img/sprite_auto.svg#logo"></use>
             </svg>
             <div class="logo__content logo__content--footer">
-              <h2 class="logo__title">Smart Device</h2>
+              <h2>Smart Device</h2>
               <span class="logo__description">умные технологии</span>
             </div>
           </a>
@@ -294,7 +295,8 @@
             <span class="accordion__target-fix" id="accordion2"></span>
             <a class="accordion__open accordion__open--line" href="#accordion2" id="open-accordion2" title="open">Наш
               офис</a>
-            <a class="accordion__close accordion__close--line" href="#accordion" id="close-accordion2" title="close">Наш офис</a>
+            <a class="accordion__close accordion__close--line" href="#accordion" id="close-accordion2" title="close">Наш
+              офис</a>
             <div class="accordion__content">
               <ul class="footer-nav">
                 <li class="footer-nav__item">
@@ -324,25 +326,27 @@
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
-        <h2 class="modal__title">Закажите звонок</h2>
+        <h2>Закажите звонок</h2>
         <p class="modal__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <form class="form form--modal" action="https://echo.htmlacademy.ru" method="post" autocomplete="off"
           id="form-modal">
-          <div class="form__element">
-            <label class="form__label form__label--name" for="name-modal">
-              <input class="form__input form__input--req form__input--name-modal" type="text" id="name-modal"
-                name="name" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё]+$" minlength="1" maxlength="25" required
-                data-focus>
-            </label>
+          <div class="form__input form__input--name">
+            <label class="visually-hidden" for="name-modal">Введите имя</label>
+            <input class="form__input form__input--req form__input--name-modal" type="text" data-name id="name-modal"
+              name="name" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё]+$" minlength="1" maxlength="25" required
+              data-focus>
+
           </div>
-          <div class="form__element">
-            <label class="form__label form__label--tel" for="tel-modal">
-              <input class="form__input form__input--req form__input--tel-modal" type="tel" id="tel-modal" name="tel"
-                placeholder="Телефон" minlength="17" maxlength="18" required>
-            </label>
+          <div class="form__input form__input--tel">
+            <label class="visually-hidden" for="tel-modal">Введите телефон</label>
+            <input class="form__input form__input--req form__input--tel-modal" type="tel" data-tel-modal id="tel-modal"
+              name="tel" placeholder="Телефон" minlength="17" maxlength="18" required>
+
           </div>
-          <textarea class="form__input form__input--textarea" name="question-modal" placeholder="Ваш вопрос"
-            id="question-modal" cols="30" rows="6" minlength="1"></textarea>
+          <div class="form__textarea">
+            <label class="visually-hidden" for="question-modal">Задайте вопрос</label>
+            <textarea name="question-modal" placeholder="Ваш вопрос" id="question-modal" minlength="1"></textarea>
+          </div>
           <button class="form__button btn btn--form" type="submit">Отправить</button>
           <label class="form__check check" for="consent-modal">
             <input class="check__control" type="checkbox" name="agree" id="consent-modal" required>
