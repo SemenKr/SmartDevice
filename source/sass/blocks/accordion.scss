@@ -105,7 +105,7 @@
   }
 }
 
-.accordion span:target ~ .accordion__content {
+span:target ~ .accordion__content {
   @include vp-767 {
     transition: all $trans-default;
     display: block;
@@ -113,17 +113,17 @@
   }
 }
 
-.accordion span:target ~ .accordion__close {
+span:target ~ .accordion__close {
   display: flex;
   transition: all $trans-default;
 }
 
-.accordion span:target ~ .accordion__open {
+span:target ~ .accordion__open {
   display: none;
   transition: all $trans-default;
 }
 
-.accordion span:target ~ .accordion__close::after {
+span:target ~ .accordion__close::after {
   @include vp-767 {
     content: "";
     transition: all $trans-default;

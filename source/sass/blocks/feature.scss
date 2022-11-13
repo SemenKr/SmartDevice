@@ -19,8 +19,7 @@
     background-color: $color-neon-blue;
     color: $color-light-text;
 
-    .feature__image,
-    .feature__title {
+    .feature__image {
       color: $color-light-text;
     }
   }
@@ -34,7 +33,7 @@
   }
 }
 
-.feature__title {
+.feature h3 {
   margin: 0;
   margin-bottom: 0;
   font-size: 24px;
@@ -51,7 +50,7 @@
   }
 }
 
-.feature__description {
+.feature p {
   font-family: "PT Mono", sans-serif;
   font-size: 16px;
 
@@ -67,7 +66,3 @@
   }
 }
 
-.feature__image,
-.feature__title {
-  color: $color-neon-blue;
-}
