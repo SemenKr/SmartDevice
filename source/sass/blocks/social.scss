@@ -30,3 +30,29 @@
     transition: all $trans-default;
   }
 }
+
+.social__link-img {
+  transition: all $trans-default;
+
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
+  }
+
+  fill: $color-default-white;
+}
+
+.social__link:hover .social__link-img {
+  fill: $color-neon-blue;
+  transform: scale(1.2) rotate(360deg);
+}
+
+.social__link:active .social__link-img {
+  fill: $color-neon-blue;
+  transform: scale(1.1);
+  opacity: 0.3;
+}
+
+.social__link:focus .social__link-img {
+  fill: $color-neon-blue;
+}

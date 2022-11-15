@@ -1641,6 +1641,32 @@ span:target ~ .accordion__open {
   transition: all 0.3s ease;
 }
 
+.social__link-img {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  fill: #ffffff;
+}
+
+.social__link:hover .social__link-img {
+  fill: #00b2ff;
+  -webkit-transform: scale(1.2) rotate(360deg);
+  -ms-transform: scale(1.2) rotate(360deg);
+  transform: scale(1.2) rotate(360deg);
+}
+
+.social__link:active .social__link-img {
+  fill: #00b2ff;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 0.3;
+}
+
+.social__link:focus .social__link-img {
+  fill: #00b2ff;
+}
+
 .footer-nav {
   padding: 0;
   list-style: none;
@@ -2329,6 +2355,11 @@ span:target ~ .accordion__open {
 
   .accordion__nav {
     min-width: 270px;
+  }
+
+  .social__link-img {
+    width: 30px;
+    height: 30px;
   }
 
   .footer-nav {
