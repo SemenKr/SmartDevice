@@ -52,84 +52,84 @@
 
   &--production {
 
-    background-image: url("../../img/product1@1x.jpg");
+    background-image: url("../../img/product1@1x.webp");
 
 
     @media (min-width: $vp-1024) {
       @include retina {
-        background-image: url("../../img/product1@2x.jpg");
+        background-image: url("../../img/product1@2x.webp");
       }
     }
 
     @include vp-1023 {
-      background-image: url("../../img/product1-tablet@1x.jpg");
+      background-image: url("../../img/product1-tablet@1x.webp");
 
       @include retina {
-        background-image: url("../../img/product1-tablet@2x.jpg");
+        background-image: url("../../img/product1-tablet@2x.webp");
       }
     }
 
     @include vp-767 {
-      background-image: url("../../img/product1-mobile@1x.jpg");
+      background-image: url("../../img/product1-mobile@1x.webp");
 
       @include retina {
-        background-image: url("../../img/product1-mobile@2x.jpg");
+        background-image: url("../../img/product1-mobile@2x.webp");
       }
     }
   }
 
   &--montage {
 
-    background-image: url("../../img/product2@1x.jpg");
+    background-image: url("../../img/product2@1x.webp");
 
 
     @media (min-width: $vp-1024) {
       @include retina {
-        background-image: url("../../img/product2@2x.jpg");
+        background-image: url("../../img/product2@2x.webp");
       }
     }
 
     @include vp-1023 {
-      background-image: url("../../img/product2-tablet@1x.jpg");
+      background-image: url("../../img/product2-tablet@1x.webp");
 
       @include retina {
-        background-image: url("../../img/product2-tablet@2x.jpg");
+        background-image: url("../../img/product2-tablet@2x.webp");
       }
     }
 
     @include vp-767 {
-      background-image: url("../../img/product2-mobile@1x.jpg");
+      background-image: url("../../img/product2-mobile@1x.webp");
 
       @include retina {
-        background-image: url("../../img/product2-mobile@2x.jpg");
+        background-image: url("../../img/product2-mobile@2x.webp");
       }
     }
   }
 
   &--component {
 
-    background-image: url("../../img/product3@1x.jpg");
+    background-image: url("../../img/product3@1x.webp");
 
 
     @media (min-width: $vp-1024) {
       @include retina {
-        background-image: url("../../img/product3@2x.jpg");
+        background-image: url("../../img/product3@2x.webp");
       }
     }
 
     @include vp-1023 {
-      background-image: url("../../img/product3-tablet@1x.jpg");
+      background-image: url("../../img/product3-tablet@1x.webp");
 
       @include retina {
-        background-image: url("../../img/product3-tablet@2x.jpg");
+        background-image: url("../../img/product3-tablet@2x.webp");
       }
     }
 
     @include vp-767 {
-      background-image: url("../../img/product3-mobile@1x.jpg");
+      background-image: url("../../img/product3-mobile@1x.webp");
 
       @include retina {
-        background-image: url("../../img/product3-mobile@2x.jpg");
+        background-image: url("../../img/product3-mobile@2x.webp");
       }
     }
   }

@@ -134,3 +134,15 @@ span:target ~ .accordion__close::after {
     background-image: url("data:image/svg+xml,%0A%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 7H15V8H0V7Z' fill='%23F8FDFF'/%3E%3C/svg%3E");
   }
 }
+
+.accordion__nav {
+  min-width: 450px;
+
+  @include vp-1023 {
+    min-width: 220px;
+  }
+
+  @include vp-767 {
+    min-width: 270px;
+  }
+}

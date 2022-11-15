@@ -859,6 +859,9 @@ button,
   padding-bottom: 35px;
   position: fixed;
   z-index: 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
 }
 
 .main-header__logo {
@@ -961,7 +964,7 @@ button,
   padding-top: 305px;
   padding-bottom: 282px;
   background-color: #000000;
-  background-image: url("../img/background-desktop@1x.jpg");
+  background-image: url("../img/background-desktop@1x.webp");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -1191,6 +1194,7 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   max-width: 1302px;
+  min-width: 650px;
   padding: 0;
   margin: 0 auto;
   list-style: none;
@@ -1246,15 +1250,15 @@ button,
 }
 
 .product-card--production {
-  background-image: url("../../img/product1@1x.jpg");
+  background-image: url("../../img/product1@1x.webp");
 }
 
 .product-card--montage {
-  background-image: url("../../img/product2@1x.jpg");
+  background-image: url("../../img/product2@1x.webp");
 }
 
 .product-card--component {
-  background-image: url("../../img/product3@1x.jpg");
+  background-image: url("../../img/product3@1x.webp");
 }
 
 .product-card h3 {
@@ -1603,6 +1607,10 @@ span:target ~ .accordion__open {
   transition: all 0.3s ease;
 }
 
+.accordion__nav {
+  min-width: 450px;
+}
+
 .social__list {
   padding: 0;
   gap: 25px;
@@ -1610,6 +1618,8 @@ span:target ~ .accordion__open {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .social__item {
@@ -1670,6 +1680,15 @@ span:target ~ .accordion__open {
   vertical-align: middle;
 }
 
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1713,19 +1732,19 @@ span:target ~ .accordion__open {
 
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 144dpi), (min-width: 1024px) and (min-resolution: 1.5dppx) {
   .info {
-    background-image: url("../img/background-desktop@2x.jpg");
+    background-image: url("../img/background-desktop@2x.webp");
   }
 
   .product-card--production {
-    background-image: url("../../img/product1@2x.jpg");
+    background-image: url("../../img/product1@2x.webp");
   }
 
   .product-card--montage {
-    background-image: url("../../img/product2@2x.jpg");
+    background-image: url("../../img/product2@2x.webp");
   }
 
   .product-card--component {
-    background-image: url("../../img/product3@2x.jpg");
+    background-image: url("../../img/product3@2x.webp");
   }
 }
 
@@ -1761,7 +1780,7 @@ span:target ~ .accordion__open {
   .info {
     padding-top: 180px;
     padding-bottom: 207px;
-    background-image: url("../img/background-tablet@1x.jpg");
+    background-image: url("../img/background-tablet@1x.webp");
   }
 
   .info__container {
@@ -1841,15 +1860,15 @@ span:target ~ .accordion__open {
   }
 
   .product-card--production {
-    background-image: url("../../img/product1-tablet@1x.jpg");
+    background-image: url("../../img/product1-tablet@1x.webp");
   }
 
   .product-card--montage {
-    background-image: url("../../img/product2-tablet@1x.jpg");
+    background-image: url("../../img/product2-tablet@1x.webp");
   }
 
   .product-card--component {
-    background-image: url("../../img/product3-tablet@1x.jpg");
+    background-image: url("../../img/product3-tablet@1x.webp");
   }
 
   .product-card h3 {
@@ -1921,6 +1940,10 @@ span:target ~ .accordion__open {
     grid-template-columns: 1fr 1fr;
   }
 
+  .accordion__nav {
+    min-width: 220px;
+  }
+
   .social {
     justify-self: flex-end;
   }
@@ -1953,19 +1976,19 @@ span:target ~ .accordion__open {
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .info {
-    background-image: url("../img/background-tablet@2x.jpg");
+    background-image: url("../img/background-tablet@2x.webp");
   }
 
   .product-card--production {
-    background-image: url("../../img/product1-tablet@2x.jpg");
+    background-image: url("../../img/product1-tablet@2x.webp");
   }
 
   .product-card--montage {
-    background-image: url("../../img/product2-tablet@2x.jpg");
+    background-image: url("../../img/product2-tablet@2x.webp");
   }
 
   .product-card--component {
-    background-image: url("../../img/product3-tablet@2x.jpg");
+    background-image: url("../../img/product3-tablet@2x.webp");
   }
 }
 
@@ -2026,7 +2049,7 @@ span:target ~ .accordion__open {
   .info {
     padding-top: 154px;
     padding-bottom: 190px;
-    background-image: url("../img/background-mobile@2x.jpg");
+    background-image: url("../img/background-mobile@2x.webp");
   }
 
   .info__container {
@@ -2145,15 +2168,15 @@ span:target ~ .accordion__open {
   }
 
   .product-card--production {
-    background-image: url("../../img/product1-mobile@1x.jpg");
+    background-image: url("../../img/product1-mobile@1x.webp");
   }
 
   .product-card--montage {
-    background-image: url("../../img/product2-mobile@1x.jpg");
+    background-image: url("../../img/product2-mobile@1x.webp");
   }
 
   .product-card--component {
-    background-image: url("../../img/product3-mobile@1x.jpg");
+    background-image: url("../../img/product3-mobile@1x.webp");
   }
 
   .product-card h3 {
@@ -2304,6 +2327,10 @@ span:target ~ .accordion__open {
     background-image: url("data:image/svg+xml,%0A%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 7H15V8H0V7Z' fill='%23F8FDFF'/%3E%3C/svg%3E");
   }
 
+  .accordion__nav {
+    min-width: 270px;
+  }
+
   .footer-nav {
     margin: 0;
   }
@@ -2316,19 +2343,19 @@ span:target ~ .accordion__open {
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .info {
-    background-image: url("../img/background-mobile@2x.jpg");
+    background-image: url("../img/background-mobile@2x.webp");
   }
 
   .product-card--production {
-    background-image: url("../../img/product1-mobile@2x.jpg");
+    background-image: url("../../img/product1-mobile@2x.webp");
   }
 
   .product-card--montage {
-    background-image: url("../../img/product2-mobile@2x.jpg");
+    background-image: url("../../img/product2-mobile@2x.webp");
   }
 
   .product-card--component {
-    background-image: url("../../img/product3-mobile@2x.jpg");
+    background-image: url("../../img/product3-mobile@2x.webp");
   }
 }
 
