@@ -1441,6 +1441,7 @@ button,
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .check:disabled {
@@ -1464,10 +1465,12 @@ button,
   border-radius: 3px;
   display: -ms-grid;
   display: grid;
+  cursor: pointer;
 }
 
 .check input[type=checkbox]::before {
   content: "";
+  cursor: pointer;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
