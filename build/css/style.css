@@ -1786,8 +1786,13 @@ span:target ~ .accordion__open {
   }
 
   .main-header {
+    position: static;
+    top: 0;
+    left: 0;
+    right: 0;
     padding-top: 15px;
     padding-bottom: 20px;
+    margin-bottom: -100px;
   }
 
   .main-header__nav {
@@ -2059,6 +2064,7 @@ span:target ~ .accordion__open {
   .main-header {
     padding-top: 15px;
     padding-bottom: 20px;
+    margin-bottom: -70px;
   }
 
   .main-header__nav {
