@@ -7,7 +7,7 @@ function readMore() {
     if (more.classList.contains('about-content__description-wrapper--close')) {
       more.classList.toggle('about-content__description-wrapper--close');
       more.classList.toggle('about-content__description-wrapper--open');
-      buttonMore.textContent = 'Скрыть';
+      buttonMore.textContent = 'Свернуть';
     } else {
       more.classList.toggle('about-content__description-wrapper--open');
       more.classList.toggle('about-content__description-wrapper--close');
