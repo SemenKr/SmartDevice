@@ -190,7 +190,7 @@
               </div>
               <div class="form__input form__input--tel">
                 <label class="visually-hidden" for="tel">Введите номер телефона</label>
-                <input  data-tel name="tel" type="tel" placeholder="Телефон" minlength="11" id="tel"
+                <input  data-tel name="tel" type="tel" placeholder="Телефон" pattern=".{18}" id="tel"
                   required>
               </div>
               <div class="form__textarea">
@@ -198,13 +198,13 @@
                 <textarea class="form__input form__input--textarea" name="question" placeholder="Ваш вопрос"
                   id="question"></textarea>
               </div>
-              <button class="form__button btn btn--form" type="submit">Задать вопрос</button>
               <div class="form__element">
                 <label class="form__check check" for="consent">
                   <input type="checkbox" name="agree" id="consent" checked required>
                   Я согласен на обработку персональных данных
                 </label>
               </div>
+              <button class="form__button btn btn--form" type="submit">Задать вопрос</button>
             </form>
           </div>
         </div>

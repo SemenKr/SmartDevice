@@ -66,6 +66,10 @@
   box-shadow: 0  0 5px 2px rgba(75, 252, 102, 0.5);
 }
 
+.form__element {
+  grid-column: 2 / 3;
+}
+
 .form__check {
   padding-top: 15px;
 
@@ -79,6 +83,9 @@
 }
 
 .form__button {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+
   @include vp-1023 {
     width: 265px;
     margin-top: 17px;

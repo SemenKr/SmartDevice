@@ -1423,8 +1423,23 @@ button,
   box-shadow: 0 0 5px 2px rgba(75, 252, 102, 0.5);
 }
 
+.form__element {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
 .form__check {
   padding-top: 15px;
+}
+
+.form__button {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
 }
 
 .check {
