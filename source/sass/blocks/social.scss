@@ -42,6 +42,10 @@
   fill: $color-default-white;
 }
 
+.social__link {
+  display: block;
+}
+
 .social__link:hover .social__link-img {
   fill: $color-neon-blue;
   transform: scale(1.2) rotate(360deg);

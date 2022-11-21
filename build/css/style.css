@@ -1675,6 +1675,10 @@ span:target ~ .accordion__open {
   fill: #ffffff;
 }
 
+.social__link {
+  display: block;
+}
+
 .social__link:hover .social__link-img {
   fill: #00b2ff;
   -webkit-transform: scale(1.2) rotate(360deg);
