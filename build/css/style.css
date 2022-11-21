@@ -1786,6 +1786,8 @@ span:target ~ .accordion__open {
   }
 
   .main-header {
+    position: relative;
+    margin-bottom: -100px;
     padding-top: 15px;
     padding-bottom: 20px;
   }
@@ -2057,6 +2059,7 @@ span:target ~ .accordion__open {
   }
 
   .main-header {
+    margin-bottom: -70px;
     padding-top: 15px;
     padding-bottom: 20px;
   }
