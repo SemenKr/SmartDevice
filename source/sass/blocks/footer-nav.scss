@@ -35,6 +35,7 @@
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
+  transition: color $trans-default;
 
   @include vp-1023 {
     padding: 3px 2px;
@@ -47,5 +48,9 @@
   @include vp-767 {
     font-size: 14px;
     line-height: 25px;
+  }
+
+  @include hover-focus {
+    color: $color-neon-blue;
   }
 }

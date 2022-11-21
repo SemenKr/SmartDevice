@@ -1586,6 +1586,14 @@ button,
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.accordion__open.focus-visible:focus,
+.accordion__close.focus-visible:focus {
+  color: #00b2ff;
 }
 
 .accordion__close {
@@ -1710,6 +1718,13 @@ span:target ~ .accordion__open {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.footer-nav__link.focus-visible:focus {
+  color: #00b2ff;
 }
 
 .wrapper {
@@ -2435,10 +2450,19 @@ span:target ~ .accordion__open {
     opacity: 0.8;
   }
 
+  .accordion__open:hover:not(.focus-visible),
+  .accordion__close:hover:not(.focus-visible) {
+    color: #00b2ff;
+  }
+
   .social__item:hover:not(.focus-visible) {
     opacity: 0.8;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+  }
+
+  .footer-nav__link:hover:not(.focus-visible) {
+    color: #00b2ff;
   }
 }
