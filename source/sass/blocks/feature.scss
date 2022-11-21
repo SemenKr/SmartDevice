@@ -19,6 +19,10 @@
     background-color: $color-neon-blue;
     color: $color-light-text;
 
+    h3 {
+      color: $color-light-text;
+    }
+
     .feature__image {
       color: $color-light-text;
     }
@@ -27,6 +31,7 @@
 
 .feature__image {
   margin-bottom: 24px;
+  color: $color-neon-blue;
 
   @include vp-1023 {
     margin-bottom: 15px;
@@ -37,7 +42,7 @@
   margin: 0;
   margin-bottom: 0;
   font-size: 24px;
-
+  color: $color-neon-blue;
   font-weight: 400;
 
   @include vp-1023 {
