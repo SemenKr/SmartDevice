@@ -14,6 +14,14 @@
 }
 
 .accordion__item {
+  @include hover-focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
   &--nav {
     grid-column: 1 / 2;
 
@@ -48,12 +56,16 @@
   text-transform: uppercase;
   transition: color $trans-default;
 
+  &:focus-visible {
+    outline: none;
+  }
+
   @include vp-767 {
     padding: 20px 10px;
   }
 
   @include hover-focus {
-    color: $color-neon-blue;
+    outline: none;
   }
 
 

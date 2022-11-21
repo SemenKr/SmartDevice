@@ -1556,6 +1556,14 @@ button,
   grid-template-columns: 1fr auto;
 }
 
+.accordion__item.focus-visible:focus {
+  outline: none;
+}
+
+.accordion__item:focus-visible {
+  outline: none;
+}
+
 .accordion__item--nav {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -1591,9 +1599,14 @@ button,
   transition: color 0.3s ease;
 }
 
+.accordion__open:focus-visible,
+.accordion__close:focus-visible {
+  outline: none;
+}
+
 .accordion__open.focus-visible:focus,
 .accordion__close.focus-visible:focus {
-  color: #00b2ff;
+  outline: none;
 }
 
 .accordion__close {
@@ -2450,9 +2463,13 @@ span:target ~ .accordion__open {
     opacity: 0.8;
   }
 
+  .accordion__item:hover:not(.focus-visible) {
+    outline: none;
+  }
+
   .accordion__open:hover:not(.focus-visible),
   .accordion__close:hover:not(.focus-visible) {
-    color: #00b2ff;
+    outline: none;
   }
 
   .social__item:hover:not(.focus-visible) {
