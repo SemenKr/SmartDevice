@@ -1421,9 +1421,6 @@ button,
 .form__input input:valid {
   -webkit-box-shadow: 0 0 5px 2px rgba(75, 252, 102, 0.5);
   box-shadow: 0 0 5px 2px rgba(75, 252, 102, 0.5);
-  -webkit-transform: translateY(-5px);
-  -ms-transform: translateY(-5px);
-  transform: translateY(-5px);
 }
 
 .form__check {
