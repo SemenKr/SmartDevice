@@ -47,8 +47,7 @@
   font-size: 36px;
   line-height: 51px;
   color: $color-default-white;
-  margin: 0;
-  margin-bottom: 15px;
+  margin: 0 0 10px -5px;
 
   @include vp-1023 {
     margin-bottom: 10px;
