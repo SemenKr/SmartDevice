@@ -93,8 +93,10 @@
 
 .modal__content {
   position: relative;
-
+  display: flex;
+  flex-direction: column;
   width: 500px;
+  height: 610px;
   padding: 40px;
 
   background-color: $color-neon-blue;
@@ -137,5 +139,5 @@
   line-height: 22px;
   color: $color-default-white;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
