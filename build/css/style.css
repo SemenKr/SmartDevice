@@ -1169,8 +1169,8 @@ button,
 
 .products {
   background-color: #041827;
-  padding-top: 70px;
-  padding-bottom: 138px;
+  padding-top: 67px;
+  padding-bottom: 140px;
 }
 
 .products__container {
@@ -1295,7 +1295,7 @@ button,
 
 .main-form__container {
   padding-top: 166px;
-  padding-bottom: 252px;
+  padding-bottom: 248px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -1314,8 +1314,7 @@ button,
   font-size: 36px;
   line-height: 51px;
   color: #ffffff;
-  margin: 0;
-  margin-bottom: 15px;
+  margin: 0 0 10px -5px;
 }
 
 .main-form p {
@@ -1344,6 +1343,7 @@ button,
   column-gap: 30px;
   row-gap: 19px;
   z-index: 2;
+  max-width: 580px;
 }
 
 .form--modal {
@@ -1416,6 +1416,7 @@ button,
 
 .form__textarea textarea {
   min-height: 155px;
+  padding-top: 22px;
 }
 
 .form__input input:valid {
@@ -1430,7 +1431,8 @@ button,
 }
 
 .form__check {
-  padding-top: 15px;
+  padding-top: 22px;
+  padding-left: 9px;
 }
 
 .form__button {
@@ -1440,6 +1442,8 @@ button,
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
+  margin-top: 6px;
+  margin-right: 10px;
 }
 
 .check {
@@ -1877,11 +1881,11 @@ span:target ~ .accordion__open {
 
   .info p {
     padding-right: 10px;
-    margin: 0 0 48px;
+    margin: 0 0 59px;
   }
 
   .info__button {
-    margin-left: 50px;
+    margin-left: 45px;
   }
 
   .feature {
@@ -1908,7 +1912,7 @@ span:target ~ .accordion__open {
 
   .about {
     padding-top: 36px;
-    padding-bottom: 55px;
+    padding-bottom: 54px;
     -webkit-column-gap: 29px;
     -moz-column-gap: 29px;
     column-gap: 29px;
@@ -1968,24 +1972,35 @@ span:target ~ .accordion__open {
   }
 
   .main-form h3 {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    margin-left: 0;
   }
 
   .main-form p {
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 
   .main-form__image-wrapper {
     display: none;
   }
 
+  .form {
+    max-width: 670px;
+  }
+
+  .form__textarea textarea {
+    padding-top: 30px;
+  }
+
   .form__check {
-    padding-top: 28px;
+    padding-top: 18px;
+    margin-left: -8px;
   }
 
   .form__button {
     width: 265px;
-    margin-top: 17px;
+    margin-top: 9px;
+    height: 45px;
   }
 
   .main-footer__logo {
