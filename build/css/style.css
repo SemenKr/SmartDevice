@@ -993,6 +993,7 @@ button,
   -ms-flex-align: start;
   align-items: flex-start;
   max-width: 1056px;
+  overflow-wrap: break-word;
 }
 
 .info h1 {
@@ -1208,7 +1209,6 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   max-width: 1302px;
-  min-width: 650px;
   padding: 0;
   margin: 0 auto;
   list-style: none;
@@ -2169,17 +2169,22 @@ span:target ~ .accordion__open {
   .info__container {
     margin-left: 0;
     margin-right: 0;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 
   .info h1 {
     font-size: 36px;
     line-height: 1;
+    overflow-wrap: break-word;
     margin-bottom: 16px;
   }
 
   .info p {
     font-size: 14px;
     line-height: 1.55;
+    overflow-wrap: break-word;
   }
 
   .info__button {
