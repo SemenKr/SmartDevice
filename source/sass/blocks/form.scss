@@ -69,6 +69,7 @@
 
   @include vp-767 {
     min-height: 180px;
+    padding-top: 25px;
   }
 }
 
@@ -78,6 +79,10 @@
 
 .form__element {
   grid-column: 2 / 3;
+
+  @include vp-767 {
+    order: 6;
+  }
 }
 
 .form__check {
@@ -90,7 +95,8 @@
   }
 
   @include vp-767 {
-    padding-top: 9px;
+    padding-top: 6px;
+    padding-left: 14px;
   }
 
   &--modal {
@@ -109,6 +115,11 @@
     margin-top: 9px;
     height: 45px;
   }
+
+  @include vp-767 {
+    margin-top: 4px;
+  }
+
 
   &--modal {
     margin: 0;

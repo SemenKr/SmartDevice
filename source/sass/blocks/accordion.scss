@@ -127,6 +127,7 @@ span:target ~ .accordion__content {
     transition: all $trans-default;
     display: block;
     height: auto;
+    margin-top: -9px;
   }
 }
 

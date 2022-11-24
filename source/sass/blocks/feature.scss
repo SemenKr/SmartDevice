@@ -6,14 +6,30 @@
   border-left: 5px solid $color-neon-blue;
   min-height: 300px;
   height: 100%;
+  box-sizing: border-box;
 
   @include vp-1023 {
     padding: 40px 40px 32px;
   }
 
   @include vp-767 {
-    padding: 28px 35px 52px 24px;
+    padding: 29px 42px 53px 24px;
+    min-height: 325px;
   }
+
+  &--confidentiality,
+  &--price {
+    @include vp-767 {
+      height: 325px;
+    }
+  }
+
+  &--price {
+    @include vp-767 {
+      margin-top: -12px;
+    }
+  }
+
 
   @include hover-focus {
     background-color: $color-neon-blue;
