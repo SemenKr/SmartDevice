@@ -15,7 +15,7 @@ const prefixNumber = (str) => {
 // ======================================
 
 const getTelMask = (elem) => {
-  elem.addEventListener('input', (e) => {
+  elem.addEventListener('input', () => {
     const value = elem.value.replace(/\D+/g, '');
     const numberLength = 11;
 
@@ -50,6 +50,6 @@ const getTelMask = (elem) => {
     elem.value = result;
   });
 
-}
+};
 
 export {getTelMask};

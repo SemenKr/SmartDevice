@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {readMore} from './modules/reread-more/read-more';
-import {getTelMask} from './modules/form/form-tel'
+import {getTelMask} from './modules/form/form-tel';
 
 const tel = document.querySelector('input[data-tel]');
 const telModal = document.querySelector('input[data-tel-modal]');
