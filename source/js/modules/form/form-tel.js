@@ -3,9 +3,6 @@ const prefixNumber = (str) => {
   if (str === '7') {
     return '7 (';
   }
-  if (str === '8') {
-    return '8 (';
-  }
   if (str === '9') {
     return '7 (9';
   }
@@ -15,12 +12,12 @@ const prefixNumber = (str) => {
 // ======================================
 
 const getTelMask = (elem) => {
-  elem.addEventListener('input', (e) => {
+  elem.addEventListener('input', () => {
     const value = elem.value.replace(/\D+/g, '');
     const numberLength = 11;
 
     let result;
-    if (elem.value.includes('+8') || elem.value[0] === '8') {
+    if (elem.value.includes('+8') || elem.value[0] === '+7') {
       result = '';
     } else {
       result = '+';

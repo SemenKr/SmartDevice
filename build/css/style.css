@@ -903,23 +903,22 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 15px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #f2f5f7;
 }
 
-.logo h2 {
-  margin: 0;
-  margin-top: 6px;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 29px;
-  min-width: 140px;
+.logo__content {
+  min-width: 135px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
-.logo__description {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  color: rgba(255, 255, 255, 0.7);
+.logo__content svg {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
 }
 
 .main-nav__list {
@@ -2270,6 +2269,10 @@ span:target ~ .accordion__open {
 
   .products__text--not-mobile {
     display: none;
+  }
+
+  .products__list {
+    min-width: 270px;
   }
 
   .product-card {
