@@ -54,18 +54,19 @@
 }
 
 .products__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 85px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1302px;
+  max-width: 1222px;
   padding: 0;
   margin: 0 auto;
   list-style: none;
+  gap: 20px;
 
   @include vp-1023 {
     grid-template-columns: 1fr;
     gap: 30px;
+    flex-direction: column;
   }
 
   @include vp-767 {
