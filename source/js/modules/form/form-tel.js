@@ -47,6 +47,6 @@ const getTelMask = (elem) => {
     elem.value = result;
   });
 
-}
+};
 
 export {getTelMask};

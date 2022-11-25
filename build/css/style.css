@@ -964,7 +964,7 @@ button,
 }
 
 .main-nav__image {
-  margin-right: 15px;
+  margin-right: 12px;
 }
 
 .info {
@@ -992,6 +992,7 @@ button,
   -ms-flex-align: start;
   align-items: flex-start;
   max-width: 1056px;
+  overflow-wrap: break-word;
 }
 
 .info h1 {
@@ -1059,6 +1060,8 @@ button,
   border-left: 5px solid #00b2ff;
   min-height: 300px;
   height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .feature.focus-visible:focus {
@@ -1207,7 +1210,6 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   max-width: 1302px;
-  min-width: 650px;
   padding: 0;
   margin: 0 auto;
   list-style: none;
@@ -2168,17 +2170,23 @@ span:target ~ .accordion__open {
   .info__container {
     margin-left: 0;
     margin-right: 0;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 
   .info h1 {
     font-size: 36px;
-    line-height: 1;
-    margin-bottom: 16px;
+    line-height: 1.1;
+    overflow-wrap: break-word;
+    margin-bottom: 9px;
   }
 
   .info p {
     font-size: 14px;
     line-height: 1.55;
+    overflow-wrap: break-word;
+    margin: 0 0 46px;
   }
 
   .info__button {
@@ -2200,11 +2208,21 @@ span:target ~ .accordion__open {
     grid-template-columns: 1fr;
     -ms-grid-rows: (1fr)[4];
     grid-template-rows: repeat(4, 1fr);
-    gap: 27px;
+    gap: 30px;
   }
 
   .feature {
-    padding: 28px 35px 52px 24px;
+    padding: 29px 42px 53px 24px;
+    min-height: 325px;
+  }
+
+  .feature--confidentiality,
+  .feature--price {
+    height: 325px;
+  }
+
+  .feature--price {
+    margin-top: -12px;
   }
 
   .feature h3 {
@@ -2220,7 +2238,7 @@ span:target ~ .accordion__open {
 
   .features {
     padding-top: 50px;
-    padding-bottom: 25px;
+    padding-bottom: 8px;
   }
 
   .about {
@@ -2297,7 +2315,7 @@ span:target ~ .accordion__open {
   }
 
   .product-card h3 {
-    padding: 30px 107px 50px 30px;
+    padding: 30px 111px 50px 30px;
     font-size: 18px;
   }
 
@@ -2309,13 +2327,13 @@ span:target ~ .accordion__open {
   .main-form h3 {
     font-size: 30px;
     line-height: 42px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
   }
 
   .main-form p {
     font-size: 14px;
     line-height: 19px;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
   }
 
   .form {
@@ -2331,10 +2349,22 @@ span:target ~ .accordion__open {
 
   .form__textarea textarea {
     min-height: 180px;
+    padding-top: 25px;
+  }
+
+  .form__element {
+    -webkit-box-ordinal-group: 7;
+    -ms-flex-order: 6;
+    order: 6;
   }
 
   .form__check {
-    padding-top: 9px;
+    padding-top: 6px;
+    padding-left: 14px;
+  }
+
+  .form__button {
+    margin-top: 4px;
   }
 
   .main-footer__logo {
@@ -2430,6 +2460,7 @@ span:target ~ .accordion__open {
     transition: all 0.3s ease;
     display: block;
     height: auto;
+    margin-top: -9px;
   }
 
   span:target ~ .accordion__close::after {

@@ -41,6 +41,8 @@
   flex-direction: column;
   align-items: flex-start;
   max-width: 1056px;
+  overflow-wrap: break-word;
+
 
   @include vp-1023 {
     margin-left: 0;
@@ -50,6 +52,7 @@
   @include vp-767 {
     margin-left: 0;
     margin-right: 0;
+    justify-content: flex-start;
   }
 }
 
@@ -72,8 +75,9 @@
 
   @include vp-767 {
     font-size: 36px;
-    line-height: 1;
-    margin-bottom: 16px;
+    line-height: 1.1;
+    overflow-wrap: break-word;
+    margin-bottom: 9px;
   }
 }
 
@@ -97,6 +101,8 @@
   @include vp-767 {
     font-size: 14px;
     line-height: 1.55;
+    overflow-wrap: break-word;
+    margin: 0 0 46px;
   }
 }
 
