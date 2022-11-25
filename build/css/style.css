@@ -1038,7 +1038,6 @@ button,
   max-width: 1228px;
   margin: 0 auto;
   list-style: none;
-  min-width: 270px;
   padding: 0;
 }
 
@@ -1439,9 +1438,13 @@ button,
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .form__check {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   padding-top: 22px;
   padding-left: 9px;
 }
@@ -1635,6 +1638,8 @@ button,
   -webkit-transition: color 0.3s ease;
   -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .accordion__open:focus-visible,
@@ -2029,6 +2034,7 @@ span:target ~ .accordion__open {
     width: 265px;
     margin-top: 9px;
     height: 45px;
+    margin-right: 0;
   }
 
   .main-footer__logo {
@@ -2367,15 +2373,19 @@ span:target ~ .accordion__open {
     -webkit-box-ordinal-group: 7;
     -ms-flex-order: 6;
     order: 6;
+    max-width: 270px;
   }
 
   .form__check {
-    padding-top: 6px;
-    padding-left: 14px;
+    padding: 0;
+    margin-top: 6px;
+    margin-left: 14px;
   }
 
   .form__button {
     margin-top: 4px;
+    width: 100%;
+    margin-right: 0;
   }
 
   .main-footer__logo {
@@ -2484,10 +2494,6 @@ span:target ~ .accordion__open {
     right: 26px;
     top: 20px;
     background-image: url("data:image/svg+xml,%0A%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 7H15V8H0V7Z' fill='%23F8FDFF'/%3E%3C/svg%3E");
-  }
-
-  .accordion__nav {
-    min-width: 270px;
   }
 
   .footer-nav {

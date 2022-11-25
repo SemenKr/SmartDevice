@@ -55,6 +55,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   transition: color $trans-default;
+  box-sizing: border-box;
 
   &:focus-visible {
     outline: none;
@@ -158,9 +159,5 @@ span:target ~ .accordion__close::after {
 
   @include vp-1023 {
     min-width: 220px;
-  }
-
-  @include vp-767 {
-    min-width: 270px;
   }
 }
