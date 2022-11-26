@@ -38,7 +38,7 @@
   transition: color $trans-default;
 
   @include vp-1023 {
-    padding: 3px 2px;
+    padding: 3px 2px 4px;
 
     br {
       display: none;

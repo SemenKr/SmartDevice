@@ -872,6 +872,10 @@ button,
   grid-row: 1/2;
 }
 
+.main-header .logo__content svg {
+  margin-top: 0;
+}
+
 .main-header__logo {
   margin-right: auto;
 }
@@ -964,7 +968,7 @@ button,
 }
 
 .main-nav__image {
-  margin-right: 12px;
+  margin-right: 10px;
 }
 
 .info {
@@ -1621,7 +1625,7 @@ button,
 .accordion__open,
 .accordion__close {
   background-color: #041827;
-  padding: 5px 10px;
+  padding: 5px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1881,9 +1885,17 @@ span:target ~ .accordion__open {
     display: none;
   }
 
+  .logo {
+    gap: 9px;
+  }
+
+  .logo__content svg {
+    margin-top: 12px;
+  }
+
   .main-nav__list {
     gap: 20px 24px;
-    margin-right: 14px;
+    margin-right: 22px;
   }
 
   .main-nav__content {
@@ -2068,6 +2080,15 @@ span:target ~ .accordion__open {
   .accordion {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    margin-top: 4px;
+  }
+
+  .accordion__item--nav {
+    padding-right: 70px;
+  }
+
+  .accordion__item--contacts {
+    margin-right: 0;
   }
 
   .accordion__nav {
@@ -2079,7 +2100,8 @@ span:target ~ .accordion__open {
   }
 
   .social__list {
-    margin-top: 8px;
+    margin-top: 6px;
+    margin-right: -5px;
   }
 
   .footer-nav--topics {
@@ -2096,7 +2118,7 @@ span:target ~ .accordion__open {
   }
 
   .footer-nav__link {
-    padding: 3px 2px;
+    padding: 3px 2px 4px;
   }
 
   .footer-nav__link br {
@@ -2164,6 +2186,10 @@ span:target ~ .accordion__open {
     margin-top: 5px;
   }
 
+  .logo {
+    gap: 20px;
+  }
+
   .logo__image--header {
     width: 35px;
     height: 35px;
@@ -2178,14 +2204,14 @@ span:target ~ .accordion__open {
   }
 
   .info {
-    padding-top: 154px;
-    padding-bottom: 190px;
+    padding-top: 153px;
+    padding-bottom: 193px;
     background-image: url("../img/background-mobile@2x.webp");
   }
 
   .info__container {
     margin-left: 0;
-    margin-right: 0;
+    margin-right: 5px;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
@@ -2202,7 +2228,7 @@ span:target ~ .accordion__open {
     font-size: 14px;
     line-height: 1.55;
     overflow-wrap: break-word;
-    margin: 0 0 46px;
+    margin: 0 0 47px;
   }
 
   .info__button {
@@ -2259,7 +2285,7 @@ span:target ~ .accordion__open {
 
   .about {
     padding-top: 8px;
-    padding-bottom: 60px;
+    padding-bottom: 58px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
@@ -2332,7 +2358,7 @@ span:target ~ .accordion__open {
   }
 
   .product-card h3 {
-    padding: 30px 111px 50px 30px;
+    padding: 25px 106px 50px 30px;
     font-size: 18px;
   }
 
@@ -2378,8 +2404,8 @@ span:target ~ .accordion__open {
 
   .form__check {
     padding: 0;
-    margin-top: 6px;
-    margin-left: 14px;
+    margin-top: 7px;
+    margin-left: 7px;
   }
 
   .form__button {
@@ -2390,6 +2416,7 @@ span:target ~ .accordion__open {
 
   .main-footer__logo {
     margin-bottom: 6px;
+    margin-left: -24px;
   }
 
   .main-footer__container {
@@ -2437,7 +2464,7 @@ span:target ~ .accordion__open {
   .accordion__close--line {
     border-bottom: 1px solid #f2f5f7;
     border-top: 1px solid #f2f5f7;
-    padding-right: 25px;
+    padding-right: 32px;
     padding-left: 25px;
   }
 
