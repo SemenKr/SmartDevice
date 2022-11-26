@@ -5,7 +5,7 @@
   color: $color-light-text;
 
   @include vp-1023 {
-    gap: 9px;
+    gap: 14px;
   }
 
   @include vp-767 {
@@ -42,8 +42,17 @@
   }
 
   &--footer {
+    margin-top: 12px;
+    margin-left: -7px;
+
+    @include vp-1023 {
+      margin: 0;
+      margin-left: -5px;
+    }
+
     @include vp-767 {
       display: block;
+      margin: 0;
     }
   }
 }

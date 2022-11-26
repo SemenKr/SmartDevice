@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   color: $color-light-text;
-  padding-top: 25px;
+  padding-top: 23px;
   padding-bottom: 35px;
   position: fixed;
   z-index: 3;
@@ -26,7 +26,11 @@
   }
 
   .logo__content svg {
-    margin-top: 0;
+    margin-top: 12px;
+
+    @include vp-1023 {
+      margin-top: 0;
+    }
   }
 }
 
