@@ -8,6 +8,7 @@
     "IE 11",
     "Firefox ESR"
   ],
+  "homepage": "https://github.com/SemenKr/SmartDevice",
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
@@ -16,7 +17,7 @@
     "start": "cross-env NODE_ENV=development gulp start",
     "webp": "gulp webp",
     "imagemin": "gulp imagemin",
-    "deploy": "gulp build && gh-pages -d build"
+    "predeploy": "npm run build","deploy": "gh-pages -d build"
   },
   "editorconfig-cli": [
     "*.json",
