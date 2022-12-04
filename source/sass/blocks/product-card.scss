@@ -9,17 +9,21 @@
   background-color: #000000;
   min-height: 650px;
   transition: opacity $trans-default;
-  max-width: 350px;
+  width: 350px;
+
+  @media (max-width: 1599px) {
+    width: 280px;
+  }
 
   @include vp-1023 {
     justify-content: space-between;
     min-height: 250px;
-    max-width: 670px;
+    width: 100%;
   }
 
   @include vp-767 {
     min-height: 250px;
-    max-width: 270px;
+    width: 100%;
   }
 
   &--red {
@@ -151,7 +155,7 @@
   }
 
   @include vp-767 {
-    padding: 30px 111px 50px 30px;
+    padding: 25px 106px 50px 30px;
     font-size: 18px;
   }
 }

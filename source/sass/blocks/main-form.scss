@@ -23,7 +23,7 @@
 
 .main-form__container {
   padding-top: 166px;
-  padding-bottom: 248px;
+  padding-bottom: 250px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
@@ -38,7 +38,7 @@
 
   @include vp-767 {
     padding-top: 46px;
-    padding-bottom: 90px;
+    padding-bottom: 87px;
   }
 }
 
